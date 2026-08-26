@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact - Sulan Language Academy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="index.html" class="logo">
+      SULAN LANGUAGE ACADEMY
+    </a>
+
+    <button id="menuBtn" class="menu-button">
+      ☰
+    </button>
+
+    <ul id="navLinks">
+
+      <li>
+        <a id="navHome" href="index.html" data-i18n="navHome">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a id="navCourses" href="courses.html" data-i18n="navCourses">
+          Courses
+        </a>
+      </li>
+
+      <li>
+        <a id="navAbout" href="about.html" data-i18n="navAbout">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a id="navContact" href="contact.html" data-i18n="navContact">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+    <select id="languageSwitcher">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="zh">中文</option>
+    </select>
+
+    <button id="darkModeBtn" class="dark-mode-button">
+      🌙
+    </button>
+
+  </nav>
+
+
+  <!-- CONTACT HERO -->
+
+  <section class="contact-hero">
+
+    <h1 data-i18n="contactHeroTitle">
+      Let's Talk
+    </h1>
+
+    <p data-i18n="contactHeroSubtitle">
+      Have questions about lessons, pricing, or your language goals?
+      Send me a message and I'll get back to you within 24 hours.
+    </p>
+
+  </section>
+
+
+  <!-- CONTACT INFORMATION -->
+
+  <section class="contact-grid">
+
+    <div class="contact-card">
+
+      <i class="fa-solid fa-envelope contact-icon"></i>
+
+      <h3 data-i18n="email">
+        Email
+      </h3>
+
+      <p>
+        uzornndy@gmail.com
+      </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <i class="fa-brands fa-whatsapp contact-icon"></i>
+
+      <h3 data-i18n="whatsapp">
+        WhatsApp
+      </h3>
+
+      <p>
+        +234 813 991 4417
+      </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <i class="fa-brands fa-weixin contact-icon"></i>
+
+      <h3 data-i18n="wechat">
+        WeChat
+      </h3>
+
+      <p data-i18n="wechatAvailability">
+        Available for Chinese students
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT FORM -->
+
+  <section class="contact-form-section">
+
+    <div class="contact-form-card">
+
+      <h2 data-i18n="sendMessage">
+        Send a Message
+      </h2>
+
+
+      <form id="contactForm">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          data-i18n-placeholder="yourName"
+          required
+        >
+
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          data-i18n-placeholder="yourEmail"
+          required
+        >
+
+
+        <textarea
+          id="messageInput"
+          placeholder="Tell me what you'd like to learn..."
+          data-i18n-placeholder="learningMessage"
+          required
+        ></textarea>
+
+
+        <button
+          type="submit"
+          class="signup-button"
+          data-i18n="sendMessage"
+        >
+          Send Message
+        </button>
+
+      </form>
+
+
+      <p id="formMessage"></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SCRIPTS -->
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-content">
+
+      <p>
+        © 2026 Sulan Language Academy. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

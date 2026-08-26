@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Sulan Language Academy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="courses-page">
+ <nav>
+  <a href="index.html" class="logo">SULAN LANGUAGE ACADEMY</a>
+
+  <button id="menuBtn" class="menu-button">☰</button>
+
+  <ul id="navLinks">
+    <a href="index.html" data-i18n="navHome">Home</a>
+<a href="courses.html" data-i18n="navCourses">Courses</a>
+<a href="about.html" data-i18n="navAbout">About</a>
+<a href="contact.html" data-i18n="navContact">Contact</a>
+  </ul>
+
+  <select id="languageSwitcher">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="pt">Português</option>
+    <option value="zh">中文</option>
+  </select>
+  <button id="darkModeBtn" class="dark-mode-button">🌙</button>
+</nav>
+
+  <section class="courses-hero">
+ <h1 data-i18n="coursesTitle">Find the Right Course for You</h1>
+
+<p data-i18n="coursesSubtitle">
+  Browse our language courses and choose the one that fits your goals, interests, and journey.
+</p>
+</section>
+
+<section class="courses-grid">
+
+  <div class="course-card">
+    <div class="course-icon">
+      <i class="fa-solid fa-language"></i>
+    </div>
+    <h3 data-i18n="englishTitle">English</h3>
+
+<p data-i18n="englishDescription">
+  Improve speaking, writing, business communication, and interview skills with structured coaching.
+</p>
+
+<a href="english.html" class="signup-button" data-i18n="viewCourse">
+  View Course
+</a>
+  </div>
+
+  <div class="course-card">
+    <div class="course-icon">
+      <i class="fa-solid fa-earth-americas"></i>
+    </div>
+   <h3 data-i18n="spanishTitle">Spanish</h3>
+
+<p data-i18n="spanishDescription">
+  Master conversation, travel Spanish, and professional communication for work and international opportunities.
+</p>
+
+<a href="spanish.html" class="signup-button" data-i18n="viewCourse">
+  View Course
+</a>
+  </div>
+
+  <div class="course-card">
+    <div class="course-icon">
+      <i class="fa-solid fa-comments"></i>
+    </div>
+    <h3 data-i18n="portugueseTitle">Portuguese</h3>
+
+<p data-i18n="portugueseDescription">
+  Learn Brazilian and European Portuguese with practical lessons focused on fluency and confidence.
+</p>
+
+<a href="portuguese.html" class="signup-button" data-i18n="viewCourse">
+  View Course
+</a>
+  </div>
+
+  <div class="course-card">
+  <div class="course-icon">
+    <i class="fa-solid fa-book-open"></i>
+  </div>
+
+  <h3 data-i18n="frenchTitle">French</h3>
+
+<p data-i18n="frenchDescription">
+  French coaching is currently in development. Join the waiting list to be notified when classes become available.
+</p>
+
+<a href="french.html" class="signup-button" data-i18n="waitingList">
+  Join Waiting List
+</a>
+
+  <a href="french.html" class="signup-button">
+    Join Waiting List
+  </a>
+</section>
+
+<section class="trial-section">
+
+  <div class="trial-card">
+    <div class="trial-text">
+      <h2 data-i18n="trialTitle">Book a Free 30-Minute Trial Lesson</h2>
+      <p data-i18n="trialDescription">
+  Experience a real lesson before committing to a course. We'll discuss your goals,
+  assess your current level, and create a personalized learning plan for you.
+</p>
+      </div>
+
+  <div class="trial-features">
+    <div class="trial-feature">
+      <i class="fa-solid fa-check"></i>
+      <span data-i18n="noPayment">No payment required</span>
+    </div>
+
+    <div class="trial-feature">
+      <i class="fa-solid fa-check"></i>
+      <span data-i18n="assessment">Personalized language assessment</span>
+    </div>
+
+    <div class="trial-feature">
+      <i class="fa-solid fa-check"></i>
+      <span data-i18n="availableLanguages">
+  Available for English, Spanish, Portuguese
+</span>
+    </div>
+  </div>
+
+  <a href="enroll.html" class="signup-button" data-i18n="bookTrial">
+  Book My Free Lesson
+</a>
+
+    </div>
+  </div>
+</div>
+
+<div class="trial-image">
+  <img
+    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+    alt="Online language lesson"
+    class="hero-photo"
+  >
+</div>
+  </div>
+
+</section>
+
+<section class="trust-section">
+
+  <h2 data-i18n="trustedStudents">Trusted by Students Worldwide</h2>
+
+  <div class="trust-grid">
+
+<div class="trust-card">
+  <h3 data-i18n="china">China</h3>
+<p data-i18n="chinaDescription">
+  Business English and interview preparation
+</p>
+</div>
+
+<div class="trust-card">
+ <h3 data-i18n="nigeria">Nigeria</h3>
+<p data-i18n="nigeriaDescription">
+  Spanish, French, and Portuguese coaching
+</p>
+</div>
+
+<div class="trust-card">
+  <h3 data-i18n="brazil">Brazil</h3>
+<p data-i18n="brazilDescription">
+  English fluency and pronunciation training
+</p>
+</div>
+
+<div class="trust-card">
+  <h3 data-i18n="portugal">Portugal</h3>
+<p data-i18n="portugalDescription">
+  Advanced conversation and professional communication
+</p>
+</div>
+
+  </div>
+
+</section>
+
+  <script src="translations.js"></script>
+<script src="script.js"></script>
+<script src="courses.js"></script>
+
+<footer class="site-footer">
+  <div class="footer-content">
+
+    <div class="footer-brand">
+      <h3>SULAN LANGUAGE ACADEMY</h3>
+      <p>Helping students become fluent and confident in English, Spanish, Portuguese, and French.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <p><strong>Email:</strong> uzornndy@gmail.com</p>
+      <p><strong>WhatsApp:</strong> +234 813 991 4417</p>
+      <p><strong>WeChat:</strong> Available for Chinese students</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Sulan Language Academy. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

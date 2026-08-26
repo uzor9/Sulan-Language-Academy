@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Enroll - Sulan Language Academy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="enroll-page">
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="index.html" class="logo">
+      SULAN LANGUAGE ACADEMY
+    </a>
+
+    <button id="menuBtn" class="menu-button">
+      ☰
+    </button>
+
+    <ul id="navLinks">
+
+      <li>
+        <a id="navHome" href="index.html" data-i18n="navHome">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a id="navCourses" href="courses.html" data-i18n="navCourses">
+          Courses
+        </a>
+      </li>
+
+      <li>
+        <a id="navAbout" href="about.html" data-i18n="navAbout">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a id="navContact" href="contact.html" data-i18n="navContact">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+    <select id="languageSwitcher">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="zh">中文</option>
+    </select>
+
+    <button id="darkModeBtn" class="dark-mode-button">
+      🌙
+    </button>
+
+  </nav>
+
+
+  <!-- ENROLLMENT -->
+
+  <main class="enroll-container">
+
+    <section class="enroll-header">
+
+      <p class="eyebrow" data-i18n="startYourJourney">
+        START YOUR JOURNEY
+      </p>
+
+      <h1 id="enrollmentTitle" data-i18n="enrollmentTitle">
+        Find the Right Language Course for You
+      </h1>
+
+      <p data-i18n="enrollmentSubtitle">
+        Tell me a little about yourself and your goals.
+        I'll use your answers to understand your needs
+        and recommend the best learning approach for you.
+      </p>
+
+    </section>
+
+
+    <section class="enroll-card">
+
+      <form
+        id="enrollmentForm"
+        action="https://formspree.io/f/xgawpkpn"
+        method="POST"
+      >
+
+        <!-- NAME -->
+
+        <div class="form-group">
+
+          <label for="studentName" data-i18n="yourName">
+            Your Name
+          </label>
+
+          <input
+            type="text"
+            id="studentName"
+            name="studentName"
+            placeholder="Enter your name"
+            data-i18n-placeholder="enterYourName"
+            required
+          >
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div class="form-group">
+
+          <label for="studentEmail" data-i18n="emailAddress">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            id="studentEmail"
+            name="studentEmail"
+            placeholder="you@example.com"
+            data-i18n-placeholder="emailPlaceholder"
+            required
+          >
+
+        </div>
+
+
+        <!-- LANGUAGE -->
+
+        <div class="form-group">
+
+          <label for="languageChoice" data-i18n="languageToLearn">
+            What language do you want to learn?
+          </label>
+
+          <select
+            id="languageChoice"
+            name="languageChoice"
+            required
+          >
+
+            <option value="" data-i18n="selectLanguage">
+              Select a language
+            </option>
+
+            <option value="English">
+              English
+            </option>
+
+            <option value="Spanish">
+              Spanish
+            </option>
+
+            <option value="Portuguese">
+              Portuguese
+            </option>
+
+            <option value="French">
+              French — Coming Soon
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- CURRENT LEVEL -->
+
+        <div class="form-group">
+
+          <label for="currentLevel" data-i18n="currentLevel">
+            What is your current level?
+          </label>
+
+          <select
+            id="currentLevel"
+            name="currentLevel"
+            required
+          >
+
+            <option value="" data-i18n="selectLevel">
+              Select your level
+            </option>
+
+            <option value="Complete Beginner" data-i18n="completeBeginner">
+              Complete Beginner
+            </option>
+
+            <option value="Beginner">
+              Beginner (A1–A2)
+            </option>
+
+            <option value="Intermediate">
+              Intermediate (B1–B2)
+            </option>
+
+            <option value="Advanced">
+              Advanced (C1–C2)
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- LEARNING GOAL -->
+
+        <div class="form-group">
+
+          <label for="learningGoal" data-i18n="learningGoal">
+            What do you want to achieve?
+          </label>
+
+          <textarea
+            id="learningGoal"
+            name="learningGoal"
+            rows="5"
+            placeholder="For example: I want to improve my Business English for international job interviews."
+            data-i18n-placeholder="learningGoalPlaceholder"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <button
+          type="submit"
+          class="signup-button enrollment-submit"
+          data-i18n="submitApplication"
+        >
+          Submit Application
+        </button>
+
+      </form>
+
+
+      <!-- SUCCESS MESSAGE -->
+
+      <div id="enrollmentSuccess" class="enrollment-success">
+
+        <div class="success-icon">
+          ✓
+        </div>
+
+        <h2 data-i18n="applicationReceived">
+          Application Received!
+        </h2>
+
+        <p data-i18n="applicationThanks">
+          Thanks for applying to Sulan Language Academy.
+          I'll review your information and get back to you soon.
+        </p>
+
+        <a
+          href="index.html"
+          class="view-courses-button"
+          data-i18n="backToHome"
+        >
+          Back to Home
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- SCRIPTS -->
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+  <script src="enroll.js"></script>
+
+</body>
+</html>
