@@ -12,6 +12,9 @@ const selectedLanguage = params.get("language");
 const enrollmentTitle = document.getElementById("enrollmentTitle");
 const learningGoal = document.getElementById("learningGoal");
 const currentLevel = document.getElementById("currentLevel");
+const studentCountry = document.getElementById("studentCountry");
+const coachingType = document.getElementById("coachingType");
+const lessonFrequency = document.getElementById("lessonFrequency");
 
 
 // --------------------------------------------------
@@ -36,7 +39,23 @@ const enrollmentTranslations = {
     completeBeginner: "Complete Beginner",
     beginner: "Beginner (A1–A2)",
     intermediate: "Intermediate (B1–B2)",
-    advanced: "Advanced (C1–C2)"
+    advanced: "Advanced (C1–C2)",
+
+    countryLabel: "What country are you currently in?",
+countryPlaceholder: "For example: France, China, Nigeria...",
+
+coachingTypeLabel: "What type of coaching are you interested in?",
+selectCoachingType: "Select coaching type",
+generalCoaching: "General Language Coaching",
+businessCoaching: "Business & Professional Coaching",
+personalizedCoaching: "Personalized Coaching",
+
+frequencyLabel: "How often would you like to have lessons?",
+selectFrequency: "Select lesson frequency",
+onceWeekly: "Once per week",
+twiceWeekly: "Twice per week",
+threePlusWeekly: "3+ times per week",
+notSure: "I'm not sure yet",
   },
 
   es: {
@@ -55,7 +74,23 @@ const enrollmentTranslations = {
     completeBeginner: "Principiante absoluto",
     beginner: "Principiante (A1–A2)",
     intermediate: "Intermedio (B1–B2)",
-    advanced: "Avanzado (C1–C2)"
+    advanced: "Avanzado (C1–C2)",
+
+    countryLabel: "¿En qué país vives actualmente?",
+countryPlaceholder: "Por ejemplo: Francia, China, Nigeria...",
+
+coachingTypeLabel: "¿Qué tipo de clases te interesan?",
+selectCoachingType: "Selecciona el tipo de clase",
+generalCoaching: "Clases de idiomas generales",
+businessCoaching: "Clases de idiomas para negocios y profesionales",
+personalizedCoaching: "Clases personalizadas",
+
+frequencyLabel: "¿Con qué frecuencia te gustaría tener clases?",
+selectFrequency: "Selecciona la frecuencia",
+onceWeekly: "Una vez por semana",
+twiceWeekly: "Dos veces por semana",
+threePlusWeekly: "3 o más veces por semana",
+notSure: "Aún no estoy seguro/a",
   },
 
   pt: {
@@ -74,7 +109,23 @@ const enrollmentTranslations = {
     completeBeginner: "Iniciante completo",
     beginner: "Iniciante (A1–A2)",
     intermediate: "Intermediário (B1–B2)",
-    advanced: "Avançado (C1–C2)"
+    advanced: "Avançado (C1–C2)",
+
+    countryLabel: "Em que país você mora atualmente?",
+countryPlaceholder: "Por exemplo: França, China, Nigéria...",
+
+coachingTypeLabel: "Que tipo de aulas você procura?",
+selectCoachingType: "Selecione o tipo de aula",
+generalCoaching: "Aulas de idiomas gerais",
+businessCoaching: "Aulas de idiomas para negócios e profissionais",
+personalizedCoaching: "Aulas personalizadas",
+
+frequencyLabel: "Com que frequência você gostaria de ter aulas?",
+selectFrequency: "Selecione a frequência",
+onceWeekly: "Uma vez por semana",
+twiceWeekly: "Duas vezes por semana",
+threePlusWeekly: "3 ou mais vezes por semana",
+notSure: "Ainda não tenho certeza",
   },
 
   zh: {
@@ -93,7 +144,23 @@ const enrollmentTranslations = {
     completeBeginner: "完全初学者",
     beginner: "初级 (A1–A2)",
     intermediate: "中级 (B1–B2)",
-    advanced: "高级 (C1–C2)"
+    advanced: "高级 (C1–C2)",
+
+    countryLabel: "您目前居住在哪个国家？",
+countryPlaceholder: "例如：法国、中国、尼日利亚……",
+
+coachingTypeLabel: "您对哪种类型的课程感兴趣？",
+selectCoachingType: "请选择课程类型",
+generalCoaching: "通用语言课程",
+businessCoaching: "商务与职业语言课程",
+personalizedCoaching: "个性化课程",
+
+frequencyLabel: "您希望多久上一次课？",
+selectFrequency: "请选择上课频率",
+onceWeekly: "每周一次",
+twiceWeekly: "每周两次",
+threePlusWeekly: "每周三次或以上",
+notSure: "暂时不确定",
   }
 
 };
@@ -195,20 +262,16 @@ function translateEnrollmentPage() {
   }
 
 
-  // -------------------------
+// -------------------------
 // Language dropdown
 // -------------------------
 
 if (languageChoice) {
-
   languageChoice.options[0].textContent = t.selectLanguage;
   languageChoice.options[1].textContent = t.english;
   languageChoice.options[2].textContent = t.spanish;
   languageChoice.options[3].textContent = t.portuguese;
   languageChoice.options[4].textContent = t.french;
-
-}
-
 }
 
 
@@ -217,14 +280,60 @@ if (languageChoice) {
 // -------------------------
 
 if (currentLevel) {
-
   currentLevel.options[0].textContent = t.selectLevel;
   currentLevel.options[1].textContent = t.completeBeginner;
   currentLevel.options[2].textContent = t.beginner;
   currentLevel.options[3].textContent = t.intermediate;
   currentLevel.options[4].textContent = t.advanced;
-
 }
+
+
+// -------------------------
+// Country
+// -------------------------
+
+if (countryLabel) {
+  countryLabel.textContent = t.countryLabel;
+}
+
+if (studentCountry) {
+  studentCountry.placeholder = t.countryPlaceholder;
+}
+
+
+// -------------------------
+// Coaching type
+// -------------------------
+
+if (coachingTypeLabel) {
+  coachingTypeLabel.textContent = t.coachingTypeLabel;
+}
+
+if (coachingType) {
+  coachingType.options[0].textContent = t.selectCoachingType;
+  coachingType.options[1].textContent = t.generalCoaching;
+  coachingType.options[2].textContent = t.businessCoaching;
+  coachingType.options[3].textContent = t.personalizedCoaching;
+}
+
+
+// -------------------------
+// Lesson frequency
+// -------------------------
+
+if (frequencyLabel) {
+  frequencyLabel.textContent = t.frequencyLabel;
+}
+
+if (lessonFrequency) {
+  lessonFrequency.options[0].textContent = t.selectFrequency;
+  lessonFrequency.options[1].textContent = t.onceWeekly;
+  lessonFrequency.options[2].textContent = t.twiceWeekly;
+  lessonFrequency.options[3].textContent = t.threePlusWeekly;
+  lessonFrequency.options[4].textContent = t.notSure;
+}
+
+} // closes translateEnrollmentPage()
 
 
 // --------------------------------------------------
