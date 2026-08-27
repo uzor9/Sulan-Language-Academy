@@ -15,6 +15,9 @@ const currentLevel = document.getElementById("currentLevel");
 const studentCountry = document.getElementById("studentCountry");
 const coachingType = document.getElementById("coachingType");
 const lessonFrequency = document.getElementById("lessonFrequency");
+const countryLabel = document.getElementById("countryLabel");
+const coachingTypeLabel = document.getElementById("coachingTypeLabel");
+const frequencyLabel = document.getElementById("frequencyLabel");
 
 
 // --------------------------------------------------
@@ -335,7 +338,18 @@ if (lessonFrequency) {
 
 } // closes translateEnrollmentPage()
 
+translateEnrollmentPage();
 
+// Update enrollment translations when language changes
+const enrollmentLanguageSwitcher = document.getElementById("languageSwitcher");
+
+if (enrollmentLanguageSwitcher) {
+  enrollmentLanguageSwitcher.addEventListener("change", function () {
+    localStorage.setItem("language", this.value);
+    translateEnrollmentPage();
+  });
+
+}
 // --------------------------------------------------
 // Automatically select language from course page
 // --------------------------------------------------

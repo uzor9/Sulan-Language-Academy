@@ -135,6 +135,9 @@ applicationReceived: "Application Received!",
 applicationThanks: "Thanks for applying to Sulan Language Academy. I'll review your information and get back to you soon.",
 
 backToHome: "Back to Home",
+
+introText: "At Sulan Language Academy, we are dedicated to helping you achieve fluency and confidence in the languages you need for your personal and professional goals.",
+
 },
 
 
@@ -268,6 +271,8 @@ applicationReceived: "¡Solicitud recibida!",
 applicationThanks: "Gracias por solicitar estudiar en Sulan Language Academy. Revisaré tu información y me pondré en contacto contigo pronto.",
 
 backToHome: "Volver al inicio",
+
+introText: "En Sulan Language Academy, nos dedicamos a ayudarte a alcanzar fluidez y confianza en los idiomas que necesitas para tus objetivos personales y profesionales.",
 },
 
 
@@ -402,6 +407,8 @@ applicationReceived: "Inscrição recebida!",
 applicationThanks: "Obrigado por se inscrever na Sulan Language Academy. Vou analisar suas informações e entrarei em contato com você em breve.",
 
 backToHome: "Voltar para o início",
+
+introText: "Na Sulan Language Academy, dedicamo-nos a ajudar você a alcançar fluência e confiança nos idiomas de que precisa para seus objetivos pessoais e profissionais.",
 },
 
 
@@ -536,6 +543,8 @@ applicationReceived: "已收到申请！",
 applicationThanks: "感谢您申请 Sulan Language Academy。我会查看您的信息，并尽快与您联系。",
 
 backToHome: "返回首页",
+
+introText: "在 Sulan Language Academy，我们致力于帮助您掌握所需的语言并建立自信，从而实现您的个人和职业目标。",
 }
 
 };

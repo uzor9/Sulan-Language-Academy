@@ -1725,3 +1725,26 @@ body.dark-mode .view-courses-button:hover {
   background: white;
   color: #0f766e;
 }
+/* =========================
+   Sulan Page Canvas Override
+   Soft teal background beneath site content
+   ========================= */
+
+body,
+.home-page,
+.courses-page,
+.contact-page,
+.about-page,
+.enroll-page {
+  background-color: #eef7f6;
+}
+
+/* Preserve the existing dark-mode canvas */
+body.dark-mode,
+body.dark-mode.home-page,
+body.dark-mode.courses-page,
+body.dark-mode.contact-page,
+body.dark-mode.about-page,
+body.dark-mode.enroll-page {
+  background-color: #111827;
+}
