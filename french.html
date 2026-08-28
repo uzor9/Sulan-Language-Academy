@@ -4,164 +4,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>French Course - Sulan Language Academy</title>
+
+  <title>French Program - Sulan Language Academy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="courses-page">
 
   <nav>
-    <a href="index.html" class="logo">SULAN LANGUAGE ACADEMY</a>
 
-<button id="menuBtn" class="menu-button">☰</button>
+    <a href="index.html" class="logo">
+      SULAN LANGUAGE ACADEMY
+    </a>
 
-<ul id="navLinks">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="courses.html">Courses</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+    <button id="menuBtn" class="menu-button">☰</button>
 
-<select id="languageSwitcher">
-  <option value="en">English</option>
-  <option value="es">Español</option>
-  <option value="pt">Português</option>
-  <option value="fr">Français</option>
-  <option value="zh">中文</option>
-</select>
+    <ul id="navLinks">
+
+      <li>
+        <a href="index.html" data-i18n="navHome">Home</a>
+      </li>
+
+      <li>
+        <a href="courses.html" data-i18n="navCourses">Courses</a>
+      </li>
+
+      <li>
+        <a href="about.html" data-i18n="navAbout">About</a>
+      </li>
+
+      <li>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </li>
+
+    </ul>
+
+    <select id="languageSwitcher">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="fr">Français</option>
+      <option value="zh">中文</option>
+    </select>
+
+    <button id="darkModeBtn" class="dark-mode-button">🌙</button>
 
   </nav>
 
+
+  <!-- FRENCH HERO -->
+
   <section class="courses-hero">
-  <h1>French Program</h1>
-  <p>French coaching is currently being developed and will be available soon.</p>
-</section>
+
+    <h1 data-i18n="frenchProgramTitle">
+      French Program
+    </h1>
+
+    <p data-i18n="frenchProgramSubtitle">
+      French coaching is currently being developed and will be available soon.
+    </p>
+
+  </section>
+
+
+  <!-- WAITING LIST -->
 
   <section class="course-detail">
 
-<div class="course-detail-card">
-<div class="course-icon">
-  <i class="fa-solid fa-book-open"></i>
-</div>
+    <div class="course-detail-card">
 
-<h2>French Classes Coming Soon</h2>
-
-<p>
-  I'm currently expanding Sulan Language Academy to include a full French coaching program.
-</p>
-
-<p>
-  The French course is being carefully developed to provide the same practical,
-  conversation-focused approach used in my English, Spanish, and Portuguese coaching.
-</p>
-
-<p>
-  If you'd like to be notified when French lessons become available,
-  send me a message and I'll add you to the priority waiting list.
-</p>
-
-<div class="course-highlight">
-  <strong>Status:</strong> In development
-</div>
-
-<div class="course-highlight">
-  <strong>Estimated Launch:</strong> Coming soon
-</div>
-
-<a
-href="https://wa.me/2348139914417?text=Hi%20Uzor,%20I'd%20like%20to%20join%20the%20French%20waiting%20list."
-class="signup-button"
-target="_blank"
->
-
-Join the Waiting List </a>
+      <div class="course-icon">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
 
 
-<h2>French Classes Coming Soon</h2>
+      <h2 data-i18n="frenchComingSoon">
+        French Classes Coming Soon
+      </h2>
 
-<p>
-  I'm currently expanding Sulan Language Academy to include a full French coaching program.
-</p>
 
-<p>
-  The French course is being carefully developed to provide the same practical,
-  conversation-focused approach used in my English, Spanish, and Portuguese coaching.
-</p>
+      <p data-i18n="frenchExpansion">
+        I'm currently expanding Sulan Language Academy to include a full French coaching program.
+      </p>
 
-<p>
-  If you'd like to be notified when French lessons become available,
-  send me a message and I'll add you to the priority waiting list.
-</p>
 
-<div class="course-highlight">
-  <strong>Status:</strong> In development
-</div>
+      <p data-i18n="frenchDevelopment">
+        The French course is being carefully developed to provide the same practical,
+        conversation-focused approach used in my English, Spanish, and Portuguese coaching.
+      </p>
 
-<div class="course-highlight">
-  <strong>Estimated Launch:</strong> Coming soon
-</div>
 
-<a
-href="https://wa.me/2348139914417?text=Hi%20Uzor,%20I'd%20like%20to%20join%20the%20French%20waiting%20list."
-class="signup-button"
-target="_blank"
->
+      <p data-i18n="frenchNotification">
+        If you'd like to be notified when French lessons become available,
+        send me a message and I'll add you to the priority waiting list.
+      </p>
 
-Join the Waiting List </a>
 
-  </div>
+      <div class="course-highlight">
 
-  <h2>What You'll Learn</h2>
+        <strong data-i18n="statusLabel">
+          Status:
+        </strong>
 
-  <ul class="course-list">
-    <li>Fluent everyday conversations</li>
-    <li>Business English and workplace communication</li>
-    <li>Interview preparation</li>
-    <li>Pronunciation and listening skills</li>
-    <li>Email and professional writing</li>
-    <li>Confidence when speaking with native speakers</li>
-  </ul>
+        <span data-i18n="developmentStatus">
+          In development
+        </span>
 
-  <h2>Who This Course Is For</h2>
+      </div>
 
-  <ul class="course-list">
-    <li>Professionals seeking better career opportunities</li>
-    <li>Students preparing for international study</li>
-    <li>Travelers and digital nomads</li>
-    <li>Chinese professionals working with international companies</li>
-  </ul>
 
-  <div class="course-highlight">
-    <strong>Format:</strong> 1-on-1 online coaching
-  </div>
+      <div class="course-highlight">
 
-  <div class="course-highlight">
-    <strong>Duration:</strong> Flexible (based on your goals)
-  </div>
+        <strong data-i18n="launchLabel">
+          Estimated Launch:
+        </strong>
 
-  <div class="course-highlight">
-    <strong>Level:</strong> Beginner to Advanced
-  </div>
+        <span data-i18n="comingSoon">
+          Coming soon
+        </span>
 
-  <a
-    href="https://wa.me/2348139914417?text=Hi%20Uzor,%20I'm%20interested%20in%20the%20English%20course."
-    class="signup-button"
-    target="_blank"
-  >
-    Book a Free Trial Lesson
-  </a>
+      </div>
 
-</div>
+
+      <a
+        href="https://wa.me/2348139914417?text=Hi%20Uzor,%20I'd%20like%20to%20join%20the%20French%20waiting%20list."
+        class="signup-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-i18n="joinFrenchWaitingList"
+      >
+        Join the Waiting List
+      </a>
+
+    </div>
+
   </section>
 
+
   <script src="translations.js"></script>
-<script src="script.js"></script> 
+  <script src="script.js"></script>
 
 </body>
 </html>

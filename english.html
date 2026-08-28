@@ -4,97 +4,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>English Course - Sulan Language Academy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="courses-page">
 
   <nav>
-    <a href="index.html" class="logo">SULAN LANGUAGE ACADEMY</a>
 
-<button id="menuBtn" class="menu-button">☰</button>
+    <a href="index.html" class="logo">
+      SULAN LANGUAGE ACADEMY
+    </a>
 
-<ul id="navLinks">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="courses.html">Courses</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+    <button id="menuBtn" class="menu-button">☰</button>
 
-<select id="languageSwitcher">
-  <option value="en">English</option>
-  <option value="es">Español</option>
-  <option value="pt">Português</option>
-  <option value="fr">Français</option>
-  <option value="zh">中文</option>
-</select>
-<button id="darkModeBtn" class="dark-mode-button">🌙</button>
+    <ul id="navLinks">
+      <li>
+        <a href="index.html" data-i18n="navHome">Home</a>
+      </li>
+
+      <li>
+        <a href="courses.html" data-i18n="navCourses">Courses</a>
+      </li>
+
+      <li>
+        <a href="about.html" data-i18n="navAbout">About</a>
+      </li>
+
+      <li>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </li>
+    </ul>
+
+    <select id="languageSwitcher">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="fr">Français</option>
+      <option value="zh">中文</option>
+    </select>
+
+    <button id="darkModeBtn" class="dark-mode-button">🌙</button>
 
   </nav>
 
+
+  <!-- COURSE HERO -->
+
   <section class="courses-hero">
-    <h1>English Fluency Coaching</h1>
-    <p>Speak confidently for work, business, travel, and international opportunities.</p>
+
+    <h1 data-i18n="englishCourseHeroTitle">
+      English Fluency Coaching
+    </h1>
+
+    <p data-i18n="englishCourseHeroSubtitle">
+      Speak confidently for work, business, travel, and international opportunities.
+    </p>
+
   </section>
+
+
+  <!-- COURSE DETAILS -->
 
   <section class="course-detail">
 
-<div class="course-detail-card">
+    <div class="course-detail-card">
 
-  <div class="course-icon">
-    <i class="fa-solid fa-language"></i>
-  </div>
+      <div class="course-icon">
+        <i class="fa-solid fa-language"></i>
+      </div>
 
-  <h2>What You'll Learn</h2>
 
-  <ul class="course-list">
-    <li>Fluent everyday conversations</li>
-    <li>Business English and workplace communication</li>
-    <li>Interview preparation</li>
-    <li>Pronunciation and listening skills</li>
-    <li>Email and professional writing</li>
-    <li>Confidence when speaking with native speakers</li>
-  </ul>
+      <h2 data-i18n="whatYoullLearn">
+        What You'll Learn
+      </h2>
 
-  <h2>Who This Course Is For</h2>
+      <ul class="course-list">
 
-  <ul class="course-list">
-    <li>Professionals seeking better career opportunities</li>
-    <li>Students preparing for international study</li>
-    <li>Travelers and digital nomads</li>
-    <li>Spanish speakers looking to improve their fluency</li>
-  </ul>
+        <li data-i18n="englishLearnConversation">
+          Fluent everyday conversations
+        </li>
 
-  <div class="course-highlight">
-    <strong>Format:</strong> 1-on-1 online coaching
-  </div>
+        <li data-i18n="englishLearnBusiness">
+          Business English and workplace communication
+        </li>
 
-  <div class="course-highlight">
-    <strong>Duration:</strong> Flexible (based on your goals)
-  </div>
+        <li data-i18n="englishLearnInterview">
+          Interview preparation
+        </li>
 
-  <div class="course-highlight">
-    <strong>Level:</strong> Beginner to Advanced
-  </div>
+        <li data-i18n="englishLearnPronunciation">
+          Pronunciation and listening skills
+        </li>
 
-  <a
-  href="enroll.html?language=English"
-  class="signup-button"
->
-  Start Learning
-</a>
+        <li data-i18n="englishLearnWriting">
+          Email and professional writing
+        </li>
 
-</div>
+        <li data-i18n="englishLearnConfidence">
+          Confidence when speaking with native speakers
+        </li>
+
+      </ul>
+
+
+      <h2 data-i18n="whoCourseIsFor">
+        Who This Course Is For
+      </h2>
+
+      <ul class="course-list">
+
+        <li data-i18n="englishForProfessionals">
+          Professionals seeking better career opportunities
+        </li>
+
+        <li data-i18n="englishForStudents">
+          Students preparing for international study
+        </li>
+
+        <li data-i18n="englishForTravelers">
+          Travelers and digital nomads
+        </li>
+
+        <li data-i18n="englishForSpanishSpeakers">
+          Spanish speakers looking to improve their fluency
+        </li>
+
+      </ul>
+
+
+      <div class="course-highlight">
+
+        <strong data-i18n="formatLabel">
+          Format:
+        </strong>
+
+        <span data-i18n="formatValue">
+          1-on-1 online coaching
+        </span>
+
+      </div>
+
+
+      <div class="course-highlight">
+
+        <strong data-i18n="durationLabel">
+          Duration:
+        </strong>
+
+        <span data-i18n="durationValue">
+          Flexible (based on your goals)
+        </span>
+
+      </div>
+
+
+      <div class="course-highlight">
+
+        <strong data-i18n="levelLabel">
+          Level:
+        </strong>
+
+        <span data-i18n="levelValue">
+          Beginner to Advanced
+        </span>
+
+      </div>
+
+
+      <a
+        href="enroll.html?language=English"
+        class="signup-button"
+        data-i18n="startLearning"
+      >
+        Start Learning
+      </a>
+
+    </div>
 
   </section>
+
+
   <script src="translations.js"></script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>

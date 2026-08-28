@@ -164,6 +164,41 @@ onceWeekly: "每周一次",
 twiceWeekly: "每周两次",
 threePlusWeekly: "每周三次或以上",
 notSure: "暂时不确定",
+  },
+
+  fr: {
+    title: "Vous vous inscrivez à des cours de {language}",
+
+    learningPlaceholder:
+      "Par exemple : Je souhaite améliorer mon anglais professionnel pour des entretiens d’embauche internationaux.",
+
+    selectLanguage: "Sélectionnez une langue",
+    english: "Anglais",
+    spanish: "Espagnol",
+    portuguese: "Portugais",
+    french: "Français — Bientôt disponible",
+
+    selectLevel: "Sélectionnez votre niveau",
+    completeBeginner: "Débutant complet",
+    beginner: "Débutant (A1–A2)",
+    intermediate: "Intermédiaire (B1–B2)",
+    advanced: "Avancé (C1–C2)",
+
+    countryLabel: "Dans quel pays vivez-vous actuellement ?",
+    countryPlaceholder: "Par exemple : France, Chine, Nigeria...",
+
+    coachingTypeLabel: "Quel type de coaching vous intéresse ?",
+    selectCoachingType: "Sélectionnez le type de coaching",
+    generalCoaching: "Coaching linguistique général",
+    businessCoaching: "Coaching professionnel et business",
+    personalizedCoaching: "Coaching personnalisé",
+
+    frequencyLabel: "À quelle fréquence souhaitez-vous avoir des cours ?",
+    selectFrequency: "Sélectionnez la fréquence",
+    onceWeekly: "Une fois par semaine",
+    twiceWeekly: "Deux fois par semaine",
+    threePlusWeekly: "3 fois ou plus par semaine",
+    notSure: "Je ne suis pas encore sûr(e)",
   }
 
 };
@@ -249,6 +284,25 @@ function translateEnrollmentPage() {
         translatedCourseLanguage = "法语";
       }
 
+      if (currentLanguage === "fr") {
+
+  if (selectedLanguage === "English") {
+    translatedCourseLanguage = "anglais";
+  }
+
+  if (selectedLanguage === "Spanish") {
+    translatedCourseLanguage = "espagnol";
+  }
+
+  if (selectedLanguage === "Portuguese") {
+    translatedCourseLanguage = "portugais";
+  }
+
+  if (selectedLanguage === "French") {
+    translatedCourseLanguage = "français";
+  }
+
+}
     }
 
     enrollmentTitle.textContent =

@@ -1748,3 +1748,19 @@ body.dark-mode.about-page,
 body.dark-mode.enroll-page {
   background-color: #111827;
 }
+
+/* =========================
+   ABOUT PAGE - TEXT ONLY
+========================= */
+
+.about-content-text-only {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content-text-only .about-text {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}

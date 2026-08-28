@@ -138,6 +138,89 @@ backToHome: "Back to Home",
 
 introText: "At Sulan Language Academy, we are dedicated to helping you achieve fluency and confidence in the languages you need for your personal and professional goals.",
 
+// English Course Page
+englishCourseHeroTitle: "English Fluency Coaching",
+englishCourseHeroSubtitle: "Speak confidently for work, business, travel, and international opportunities.",
+
+whatYoullLearn: "What You'll Learn",
+englishLearnConversation: "Fluent everyday conversations",
+englishLearnBusiness: "Business English and workplace communication",
+englishLearnInterview: "Interview preparation",
+englishLearnPronunciation: "Pronunciation and listening skills",
+englishLearnWriting: "Email and professional writing",
+englishLearnConfidence: "Confidence when speaking with native speakers",
+
+whoCourseIsFor: "Who This Course Is For",
+englishForProfessionals: "Professionals seeking better career opportunities",
+englishForStudents: "Students preparing for international study",
+englishForTravelers: "Travelers and digital nomads",
+englishForSpanishSpeakers: "Spanish speakers looking to improve their fluency",
+
+formatLabel: "Format:",
+formatValue: "1-on-1 online coaching",
+durationLabel: "Duration:",
+durationValue: "Flexible (based on your goals)",
+levelLabel: "Level:",
+levelValue: "Beginner to Advanced",
+
+startLearning: "Start Learning",
+
+// Spanish Course Page
+spanishCourseHeroTitle: "Spanish Fluency Coaching",
+spanishCourseHeroSubtitle: "Learn practical Spanish for travel, work, business, and confident everyday conversations.",
+
+spanishLearnConversation: "Everyday Spanish conversations",
+spanishLearnTravel: "Travel and cultural Spanish",
+spanishLearnInterview: "Interview preparation",
+spanishLearnPronunciation: "Pronunciation and listening skills",
+spanishLearnBusiness: "Spanish for work and business",
+spanishLearnConfidence: "Confidence when speaking with native speakers",
+
+spanishForProfessionals: "Professionals seeking better career opportunities",
+spanishForStudents: "Students preparing for international study",
+spanishForTravelers: "Travelers and digital nomads",
+spanishForLearners: "Learners who want to improve their Spanish fluency",
+
+focusLabel: "Focus:",
+spanishFocusValue: "Latin American and European Spanish",
+
+// Portuguese Course Page
+portugueseCourseHeroTitle: "Portuguese Fluency Coaching",
+portugueseCourseHeroSubtitle: "Learn Brazilian and European Portuguese for travel, work, business, and confident everyday communication.",
+
+portugueseLearnPronunciation: "Brazilian and European Portuguese pronunciation",
+portugueseLearnConversation: "Everyday Portuguese conversations",
+portugueseLearnListening: "Listening and comprehension skills",
+portugueseLearnWriting: "Reading and writing in Portuguese",
+portugueseLearnBusiness: "Portuguese for travel, work, and business",
+portugueseLearnConfidence: "Confidence when speaking with native speakers",
+
+portugueseForBeginners: "Complete beginners",
+portugueseForTravelers: "Travelers visiting Brazil or Portugal",
+portugueseForStudents: "Students preparing for relocation or study abroad",
+portugueseForLearners: "Language learners who want natural conversational fluency",
+
+portugueseFocusValue: "Brazilian and European Portuguese",
+
+// French Waiting List Page
+frenchProgramTitle: "French Program",
+frenchProgramSubtitle: "French coaching is currently being developed and will be available soon.",
+
+frenchComingSoon: "French Classes Coming Soon",
+
+frenchExpansion: "I'm currently expanding Sulan Language Academy to include a full French coaching program.",
+
+frenchDevelopment: "The French course is being carefully developed to provide the same practical, conversation-focused approach used in my English, Spanish, and Portuguese coaching.",
+
+frenchNotification: "If you'd like to be notified when French lessons become available, send me a message and I'll add you to the priority waiting list.",
+
+statusLabel: "Status:",
+developmentStatus: "In development",
+
+launchLabel: "Estimated Launch:",
+comingSoon: "Coming soon",
+
+joinFrenchWaitingList: "Join the Waiting List",
 },
 
 
@@ -273,6 +356,89 @@ applicationThanks: "Gracias por solicitar estudiar en Sulan Language Academy. Re
 backToHome: "Volver al inicio",
 
 introText: "En Sulan Language Academy, nos dedicamos a ayudarte a alcanzar fluidez y confianza en los idiomas que necesitas para tus objetivos personales y profesionales.",
+// English Course Page
+englishCourseHeroTitle: "Coaching para dominar el inglés",
+englishCourseHeroSubtitle: "Habla inglés con confianza para el trabajo, los negocios, los viajes y las oportunidades internacionales.",
+
+whatYoullLearn: "Lo que aprenderás",
+englishLearnConversation: "Conversaciones cotidianas con fluidez",
+englishLearnBusiness: "Inglés de negocios y comunicación en el trabajo",
+englishLearnInterview: "Preparación para entrevistas",
+englishLearnPronunciation: "Pronunciación y comprensión auditiva",
+englishLearnWriting: "Correos electrónicos y escritura profesional",
+englishLearnConfidence: "Confianza al hablar con hablantes nativos",
+
+whoCourseIsFor: "¿Para quién es este curso?",
+englishForProfessionals: "Profesionales que buscan mejores oportunidades laborales",
+englishForStudents: "Estudiantes que se preparan para estudiar en el extranjero",
+englishForTravelers: "Viajeros y nómadas digitales",
+englishForSpanishSpeakers: "Hispanohablantes que quieren mejorar su fluidez en inglés",
+
+formatLabel: "Formato:",
+formatValue: "Clases individuales en línea",
+durationLabel: "Duración:",
+durationValue: "Flexible (según tus objetivos)",
+levelLabel: "Nivel:",
+levelValue: "Principiante a avanzado",
+
+startLearning: "Empezar a aprender",
+
+// Spanish Course Page
+spanishCourseHeroTitle: "Coaching de fluidez en español",
+spanishCourseHeroSubtitle: "Aprende español práctico para viajar, trabajar, hacer negocios y conversar con confianza en el día a día.",
+
+spanishLearnConversation: "Conversaciones cotidianas en español",
+spanishLearnTravel: "Español para viajes y cultura",
+spanishLearnInterview: "Preparación para entrevistas",
+spanishLearnPronunciation: "Pronunciación y comprensión auditiva",
+spanishLearnBusiness: "Español para el trabajo y los negocios",
+spanishLearnConfidence: "Confianza al hablar con hablantes nativos",
+
+spanishForProfessionals: "Profesionales que buscan mejores oportunidades laborales",
+spanishForStudents: "Estudiantes que se preparan para estudiar en el extranjero",
+spanishForTravelers: "Viajeros y nómadas digitales",
+spanishForLearners: "Estudiantes que desean mejorar su fluidez en español",
+
+focusLabel: "Enfoque:",
+spanishFocusValue: "Español latinoamericano y europeo",
+
+// Portuguese Course Page
+portugueseCourseHeroTitle: "Coaching de fluidez en portugués",
+portugueseCourseHeroSubtitle: "Aprende portugués brasileño y europeo para viajar, trabajar, hacer negocios y comunicarte con confianza en el día a día.",
+
+portugueseLearnPronunciation: "Pronunciación del portugués brasileño y europeo",
+portugueseLearnConversation: "Conversaciones cotidianas en portugués",
+portugueseLearnListening: "Comprensión auditiva",
+portugueseLearnWriting: "Lectura y escritura en portugués",
+portugueseLearnBusiness: "Portugués para viajes, trabajo y negocios",
+portugueseLearnConfidence: "Confianza al hablar con hablantes nativos",
+
+portugueseForBeginners: "Principiantes absolutos",
+portugueseForTravelers: "Viajeros que visitan Brasil o Portugal",
+portugueseForStudents: "Estudiantes que se preparan para mudarse o estudiar en el extranjero",
+portugueseForLearners: "Estudiantes que buscan una fluidez natural en la conversación",
+
+portugueseFocusValue: "Portugués brasileño y europeo",
+
+// French Waiting List Page
+frenchProgramTitle: "Programa de francés",
+frenchProgramSubtitle: "El programa de francés está actualmente en desarrollo y estará disponible próximamente.",
+
+frenchComingSoon: "Clases de francés próximamente",
+
+frenchExpansion: "Actualmente estoy ampliando Sulan Language Academy para incluir un programa completo de francés.",
+
+frenchDevelopment: "El curso de francés se está desarrollando cuidadosamente para ofrecer el mismo enfoque práctico y centrado en la conversación que utilizo en mis clases de inglés, español y portugués.",
+
+frenchNotification: "Si quieres recibir una notificación cuando las clases de francés estén disponibles, envíame un mensaje y te añadiré a la lista de espera prioritaria.",
+
+statusLabel: "Estado:",
+developmentStatus: "En desarrollo",
+
+launchLabel: "Lanzamiento estimado:",
+comingSoon: "Próximamente",
+
+joinFrenchWaitingList: "Unirme a la lista de espera",
 },
 
 
@@ -409,6 +575,90 @@ applicationThanks: "Obrigado por se inscrever na Sulan Language Academy. Vou ana
 backToHome: "Voltar para o início",
 
 introText: "Na Sulan Language Academy, dedicamo-nos a ajudar você a alcançar fluência e confiança nos idiomas de que precisa para seus objetivos pessoais e profissionais.",
+
+// English Course Page
+englishCourseHeroTitle: "Coaching para dominar o inglês",
+englishCourseHeroSubtitle: "Fale inglês com confiança para trabalho, negócios, viagens e oportunidades internacionais.",
+
+whatYoullLearn: "O que você vai aprender",
+englishLearnConversation: "Conversas cotidianas com fluência",
+englishLearnBusiness: "Inglês para negócios e comunicação no trabalho",
+englishLearnInterview: "Preparação para entrevistas",
+englishLearnPronunciation: "Pronúncia e compreensão auditiva",
+englishLearnWriting: "E-mails e escrita profissional",
+englishLearnConfidence: "Confiança ao falar com falantes nativos",
+
+whoCourseIsFor: "Para quem é este curso?",
+englishForProfessionals: "Profissionais que buscam melhores oportunidades de carreira",
+englishForStudents: "Estudantes que se preparam para estudar no exterior",
+englishForTravelers: "Viajantes e nômades digitais",
+englishForSpanishSpeakers: "Falantes de espanhol que desejam melhorar sua fluência em inglês",
+
+formatLabel: "Formato:",
+formatValue: "Aulas individuais online",
+durationLabel: "Duração:",
+durationValue: "Flexível (de acordo com seus objetivos)",
+levelLabel: "Nível:",
+levelValue: "Iniciante a avançado",
+
+startLearning: "Começar a aprender",
+
+// Spanish Course Page
+spanishCourseHeroTitle: "Coaching de fluência em espanhol",
+spanishCourseHeroSubtitle: "Aprenda espanhol prático para viagens, trabalho, negócios e conversas cotidianas com confiança.",
+
+spanishLearnConversation: "Conversas cotidianas em espanhol",
+spanishLearnTravel: "Espanhol para viagens e cultura",
+spanishLearnInterview: "Preparação para entrevistas",
+spanishLearnPronunciation: "Pronúncia e compreensão auditiva",
+spanishLearnBusiness: "Espanhol para trabalho e negócios",
+spanishLearnConfidence: "Confiança ao falar com falantes nativos",
+
+spanishForProfessionals: "Profissionais que buscam melhores oportunidades de carreira",
+spanishForStudents: "Estudantes que se preparam para estudar no exterior",
+spanishForTravelers: "Viajantes e nômades digitais",
+spanishForLearners: "Alunos que desejam melhorar sua fluência em espanhol",
+
+focusLabel: "Foco:",
+spanishFocusValue: "Espanhol latino-americano e europeu",
+
+// Portuguese Course Page
+portugueseCourseHeroTitle: "Coaching de fluência em português",
+portugueseCourseHeroSubtitle: "Aprenda português brasileiro e europeu para viagens, trabalho, negócios e comunicação cotidiana com confiança.",
+
+portugueseLearnPronunciation: "Pronúncia do português brasileiro e europeu",
+portugueseLearnConversation: "Conversas cotidianas em português",
+portugueseLearnListening: "Compreensão auditiva",
+portugueseLearnWriting: "Leitura e escrita em português",
+portugueseLearnBusiness: "Português para viagens, trabalho e negócios",
+portugueseLearnConfidence: "Confiança ao falar com falantes nativos",
+
+portugueseForBeginners: "Iniciantes completos",
+portugueseForTravelers: "Viajantes que visitam o Brasil ou Portugal",
+portugueseForStudents: "Estudantes que se preparam para se mudar ou estudar no exterior",
+portugueseForLearners: "Estudantes que desejam alcançar fluência natural na conversação",
+
+portugueseFocusValue: "Português brasileiro e europeu",
+
+// French Waiting List Page
+frenchProgramTitle: "Programa de francês",
+frenchProgramSubtitle: "O programa de francês está atualmente em desenvolvimento e estará disponível em breve.",
+
+frenchComingSoon: "Aulas de francês em breve",
+
+frenchExpansion: "Atualmente estou expandindo a Sulan Language Academy para incluir um programa completo de francês.",
+
+frenchDevelopment: "O curso de francês está sendo cuidadosamente desenvolvido para oferecer a mesma abordagem prática e focada em conversação que utilizo nas aulas de inglês, espanhol e português.",
+
+frenchNotification: "Se você quiser ser avisado quando as aulas de francês estiverem disponíveis, envie-me uma mensagem e eu adicionarei você à lista de espera prioritária.",
+
+statusLabel: "Status:",
+developmentStatus: "Em desenvolvimento",
+
+launchLabel: "Lançamento previsto:",
+comingSoon: "Em breve",
+
+joinFrenchWaitingList: "Entrar na lista de espera",
 },
 
 
@@ -545,6 +795,308 @@ applicationThanks: "感谢您申请 Sulan Language Academy。我会查看您的�
 backToHome: "返回首页",
 
 introText: "在 Sulan Language Academy，我们致力于帮助您掌握所需的语言并建立自信，从而实现您的个人和职业目标。",
+
+// English Course Page
+englishCourseHeroTitle: "英语流利度辅导",
+englishCourseHeroSubtitle: "自信地使用英语进行工作、商务、旅行和把握国际机会。",
+
+whatYoullLearn: "您将学到什么",
+englishLearnConversation: "流利进行日常英语对话",
+englishLearnBusiness: "商务英语和职场沟通",
+englishLearnInterview: "面试准备",
+englishLearnPronunciation: "发音和听力技巧",
+englishLearnWriting: "电子邮件和专业写作",
+englishLearnConfidence: "自信地与英语母语者交流",
+
+whoCourseIsFor: "本课程适合谁？",
+englishForProfessionals: "希望获得更好职业机会的专业人士",
+englishForStudents: "准备出国留学的学生",
+englishForTravelers: "旅行者和数字游民",
+englishForSpanishSpeakers: "希望提高英语流利度的西班牙语使用者",
+
+formatLabel: "形式：",
+formatValue: "一对一在线辅导",
+durationLabel: "时长：",
+durationValue: "灵活安排（根据您的目标）",
+levelLabel: "水平：",
+levelValue: "初级至高级",
+
+startLearning: "开始学习",
+
+// Spanish Course Page
+spanishCourseHeroTitle: "西班牙语流利度辅导",
+spanishCourseHeroSubtitle: "学习实用西班牙语，自信应对旅行、工作、商务和日常交流。",
+
+spanishLearnConversation: "日常西班牙语会话",
+spanishLearnTravel: "旅行与文化西班牙语",
+spanishLearnInterview: "面试准备",
+spanishLearnPronunciation: "发音和听力技巧",
+spanishLearnBusiness: "工作和商务西班牙语",
+spanishLearnConfidence: "自信地与母语者交流",
+
+spanishForProfessionals: "希望获得更好职业机会的专业人士",
+spanishForStudents: "准备出国留学的学生",
+spanishForTravelers: "旅行者和数字游民",
+spanishForLearners: "希望提高西班牙语流利度的学习者",
+
+focusLabel: "重点：",
+spanishFocusValue: "拉丁美洲和欧洲西班牙语",
+
+// Portuguese Course Page
+portugueseCourseHeroTitle: "葡萄牙语流利度辅导",
+portugueseCourseHeroSubtitle: "学习巴西和欧洲葡萄牙语，自信应对旅行、工作、商务和日常交流。",
+
+portugueseLearnPronunciation: "巴西和欧洲葡萄牙语发音",
+portugueseLearnConversation: "日常葡萄牙语会话",
+portugueseLearnListening: "听力和理解能力",
+portugueseLearnWriting: "葡萄牙语阅读和写作",
+portugueseLearnBusiness: "旅行、工作和商务葡萄牙语",
+portugueseLearnConfidence: "自信地与母语者交流",
+
+portugueseForBeginners: "零基础初学者",
+portugueseForTravelers: "前往巴西或葡萄牙的旅行者",
+portugueseForStudents: "准备移居海外或出国留学的学生",
+portugueseForLearners: "希望自然流利地进行日常对话的语言学习者",
+
+portugueseFocusValue: "巴西和欧洲葡萄牙语",
+
+// French Waiting List Page
+frenchProgramTitle: "法语课程",
+frenchProgramSubtitle: "法语辅导课程目前正在开发中，即将推出。",
+
+frenchComingSoon: "法语课程即将推出",
+
+frenchExpansion: "我目前正在扩展 Sulan Language Academy，并计划推出完整的法语辅导课程。",
+
+frenchDevelopment: "法语课程正在精心开发中，将采用与英语、西班牙语和葡萄牙语课程相同的实用、注重会话的教学方式。",
+
+frenchNotification: "如果您希望在法语课程开放时收到通知，请给我发送消息，我会将您加入优先等候名单。",
+
+statusLabel: "状态：",
+developmentStatus: "开发中",
+
+launchLabel: "预计推出：",
+comingSoon: "即将推出",
+
+joinFrenchWaitingList: "加入等候名单",
+},
+
+// =========================
+// FRENCH
+// =========================
+
+fr: {
+
+  // Navigation
+  navHome: "Accueil",
+  navCourses: "Cours",
+  navAbout: "À propos",
+  navContact: "Contact",
+
+  // Homepage
+  heroTitle: "SULAN LANGUAGE ACADEMY",
+  heroSubtitle: "Coaching linguistique professionnel en ligne pour les étudiants, les professionnels et les apprenants internationaux.",
+  signup: "Commencez à apprendre aujourd’hui",
+  exploreCourses: "Découvrir les cours",
+  trialNote: "Une séance d’essai gratuite de 30 minutes est disponible pour tous les nouveaux étudiants.",
+
+  studentStat: "Étudiants",
+  languageStat: "Langues",
+  successStat: "Taux de réussite",
+
+  testimonialsTitle: "Ce que disent nos étudiants",
+
+  // Courses
+  coursesTitle: "Trouvez le cours qui vous convient",
+  coursesSubtitle: "Découvrez nos cours de langues et choisissez celui qui correspond le mieux à vos objectifs, à vos intérêts et à votre parcours.",
+
+  englishTitle: "Anglais",
+  englishDescription: "Améliorez votre expression orale, votre écriture, votre communication professionnelle et vos compétences en entretien grâce à un accompagnement structuré.",
+
+  spanishTitle: "Espagnol",
+  spanishDescription: "Maîtrisez la conversation, l’espagnol pour voyager et la communication professionnelle pour le travail et les opportunités internationales.",
+
+  portugueseTitle: "Portugais",
+  portugueseDescription: "Apprenez le portugais brésilien et européen grâce à des cours pratiques axés sur l’aisance et la confiance.",
+
+  frenchTitle: "Français",
+  frenchDescription: "Le coaching en français est actuellement en cours de développement. Rejoignez la liste d’attente pour être informé lorsque les cours seront disponibles.",
+
+  viewCourse: "Voir le cours",
+  waitingList: "Rejoindre la liste d’attente",
+
+  // Trial
+  trialTitle: "Réservez une séance d’essai gratuite de 30 minutes",
+  trialDescription: "Découvrez une véritable séance avant de vous engager. Nous discuterons de vos objectifs, évaluerons votre niveau actuel et créerons un plan d’apprentissage personnalisé.",
+  noPayment: "Aucun paiement requis",
+  assessment: "Évaluation linguistique personnalisée",
+  availableLanguages: "Disponible pour l’anglais, l’espagnol et le portugais",
+  bookTrial: "Réserver ma séance gratuite",
+
+  // Trust
+  trustedStudents: "La confiance d’étudiants du monde entier",
+
+  china: "Chine",
+  chinaDescription: "Anglais professionnel et préparation aux entretiens",
+
+  nigeria: "Nigeria",
+  nigeriaDescription: "Coaching en espagnol, français et portugais",
+
+  brazil: "Brésil",
+  brazilDescription: "Maîtrise de l’anglais et travail de la prononciation",
+
+  portugal: "Portugal",
+  portugalDescription: "Conversation avancée et communication professionnelle",
+
+  // About
+  aboutHeroTitle: "Rencontrez votre coach linguistique",
+  aboutHeroSubtitle: "J’aide les étudiants à gagner en aisance, en confiance et à s’ouvrir au monde grâce à un coaching linguistique pratique.",
+
+  aboutGreeting: "Bonjour, je suis Uzor",
+
+  aboutIntro: "Je suis le fondateur de Sulan Language Academy, où j’aide les étudiants à apprendre l’anglais, l’espagnol, le portugais et le français grâce à des conversations pratiques, des cours personnalisés et des situations de communication réelles.",
+
+  aboutTeachingStyle: "Ma méthode d’enseignement met d’abord l’accent sur la confiance. Je veux que vous puissiez parler naturellement, comprendre les locuteurs natifs, voyager sereinement et utiliser vos compétences linguistiques pour le travail, les affaires et les opportunités internationales.",
+
+  aboutLearningGoals: "Que vous prépariez un entretien d’embauche, des études à l’étranger, un déménagement dans un autre pays ou que vous appreniez simplement pour le plaisir, je créerai un programme adapté à votre niveau et à vos objectifs.",
+
+  personalizedCoaching: "Coaching personnalisé",
+  personalizedCoachingDescription: "Chaque cours est adapté à votre niveau, à vos objectifs et à votre façon d’apprendre.",
+
+  realConversations: "Conversations réelles",
+  realConversationsDescription: "Apprenez comment les locuteurs natifs communiquent réellement dans la vie quotidienne et dans le monde professionnel.",
+
+  globalOpportunities: "Opportunités internationales",
+  globalOpportunitiesDescription: "Développez des compétences linguistiques utiles pour voyager, travailler, étudier et créer des liens à l’international.",
+
+  // Contact
+  contactHeroTitle: "Parlons-en",
+  contactHeroSubtitle: "Vous avez des questions sur les cours, les tarifs ou vos objectifs linguistiques ? Envoyez-moi un message et je vous répondrai dans les 24 heures.",
+
+  email: "E-mail",
+  whatsapp: "WhatsApp",
+  wechat: "WeChat",
+  wechatAvailability: "Disponible pour les étudiants chinois",
+
+  sendMessage: "Envoyer le message",
+
+  yourName: "Votre nom",
+  yourEmail: "Votre adresse e-mail",
+  learningMessage: "Dites-moi ce que vous aimeriez apprendre...",
+
+  startYourJourney: "COMMENCEZ VOTRE PARCOURS",
+
+  // Enrollment
+  enrollmentTitle: "Trouvez le cours de langue qui vous convient",
+
+  enrollmentSubtitle: "Parlez-moi un peu de vous et de vos objectifs. J’utiliserai vos réponses pour comprendre vos besoins et vous recommander l’approche d’apprentissage la plus adaptée.",
+
+  enterYourName: "Entrez votre nom",
+
+  emailAddress: "Adresse e-mail",
+  emailPlaceholder: "vous@exemple.com",
+
+  languageToLearn: "Quelle langue souhaitez-vous apprendre ?",
+  selectLanguage: "Sélectionnez une langue",
+
+  currentLevel: "Quel est votre niveau actuel ?",
+  selectLevel: "Sélectionnez votre niveau",
+  completeBeginner: "Débutant complet",
+
+  learningGoal: "Quel est votre objectif ?",
+  learningGoalPlaceholder: "Par exemple : Je souhaite améliorer mon anglais professionnel pour des entretiens d’embauche internationaux.",
+
+  submitApplication: "Envoyer la candidature",
+
+  applicationReceived: "Candidature reçue !",
+
+  applicationThanks: "Merci d’avoir postulé auprès de Sulan Language Academy. Je vais examiner vos informations et je vous contacterai prochainement.",
+
+  backToHome: "Retour à l’accueil",
+
+ // English Course Page
+englishCourseHeroTitle: "Coaching pour maîtriser l’anglais",
+englishCourseHeroSubtitle: "Parlez anglais avec confiance pour le travail, les affaires, les voyages et les opportunités internationales.",
+
+whatYoullLearn: "Ce que vous apprendrez",
+englishLearnConversation: "Tenir des conversations quotidiennes avec aisance",
+englishLearnBusiness: "Anglais professionnel et communication au travail",
+englishLearnInterview: "Préparation aux entretiens",
+englishLearnPronunciation: "Prononciation et compréhension orale",
+englishLearnWriting: "E-mails et rédaction professionnelle",
+englishLearnConfidence: "Parler avec confiance avec des anglophones natifs",
+
+whoCourseIsFor: "À qui s’adresse ce cours ?",
+englishForProfessionals: "Aux professionnels souhaitant accéder à de meilleures opportunités de carrière",
+englishForStudents: "Aux étudiants qui se préparent à étudier à l’étranger",
+englishForTravelers: "Aux voyageurs et aux nomades numériques",
+englishForSpanishSpeakers: "Aux hispanophones souhaitant améliorer leur aisance en anglais",
+
+formatLabel: "Format :",
+formatValue: "Coaching individuel en ligne",
+durationLabel: "Durée :",
+durationValue: "Flexible (selon vos objectifs)",
+levelLabel: "Niveau :",
+levelValue: "Débutant à avancé",
+
+startLearning: "Commencer à apprendre",
+
+// Spanish Course Page
+spanishCourseHeroTitle: "Coaching pour maîtriser l’espagnol",
+spanishCourseHeroSubtitle: "Apprenez un espagnol pratique pour voyager, travailler, faire des affaires et communiquer avec confiance au quotidien.",
+
+spanishLearnConversation: "Conversations quotidiennes en espagnol",
+spanishLearnTravel: "Espagnol pour les voyages et la culture",
+spanishLearnInterview: "Préparation aux entretiens",
+spanishLearnPronunciation: "Prononciation et compréhension orale",
+spanishLearnBusiness: "Espagnol pour le travail et les affaires",
+spanishLearnConfidence: "Parler avec confiance avec des locuteurs natifs",
+
+spanishForProfessionals: "Professionnels souhaitant accéder à de meilleures opportunités de carrière",
+spanishForStudents: "Étudiants qui se préparent à étudier à l’étranger",
+spanishForTravelers: "Voyageurs et nomades numériques",
+spanishForLearners: "Apprenants souhaitant améliorer leur aisance en espagnol",
+
+focusLabel: "Objectif :",
+spanishFocusValue: "Espagnol latino-américain et européen",
+
+// Portuguese Course Page
+portugueseCourseHeroTitle: "Coaching pour maîtriser le portugais",
+portugueseCourseHeroSubtitle: "Apprenez le portugais brésilien et européen pour voyager, travailler, faire des affaires et communiquer avec confiance au quotidien.",
+
+portugueseLearnPronunciation: "Prononciation du portugais brésilien et européen",
+portugueseLearnConversation: "Conversations quotidiennes en portugais",
+portugueseLearnListening: "Compréhension orale",
+portugueseLearnWriting: "Lecture et écriture en portugais",
+portugueseLearnBusiness: "Portugais pour les voyages, le travail et les affaires",
+portugueseLearnConfidence: "Parler avec confiance avec des locuteurs natifs",
+
+portugueseForBeginners: "Débutants complets",
+portugueseForTravelers: "Voyageurs se rendant au Brésil ou au Portugal",
+portugueseForStudents: "Étudiants qui se préparent à déménager ou à étudier à l’étranger",
+portugueseForLearners: "Apprenants souhaitant parler naturellement et avec aisance",
+
+portugueseFocusValue: "Portugais brésilien et européen",
+
+// French Waiting List Page
+frenchProgramTitle: "Programme de français",
+frenchProgramSubtitle: "Le programme de français est actuellement en cours de développement et sera bientôt disponible.",
+
+frenchComingSoon: "Cours de français bientôt disponibles",
+
+frenchExpansion: "Je développe actuellement Sulan Language Academy afin d'y proposer un programme complet de français.",
+
+frenchDevelopment: "Le cours de français est soigneusement conçu pour offrir la même approche pratique et axée sur la conversation que mes cours d'anglais, d'espagnol et de portugais.",
+
+frenchNotification: "Si vous souhaitez être informé lorsque les cours de français seront disponibles, envoyez-moi un message et je vous ajouterai à la liste d'attente prioritaire.",
+
+statusLabel: "Statut :",
+developmentStatus: "En cours de développement",
+
+launchLabel: "Lancement prévu :",
+comingSoon: "Bientôt disponible",
+
+joinFrenchWaitingList: "Rejoindre la liste d'attente",
 }
 
 };
