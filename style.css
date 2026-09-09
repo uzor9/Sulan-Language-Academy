@@ -1787,6 +1787,8 @@ body.dark-mode.enroll-page {
     z-index: 1001;
   }
 
+}
+
   /* =========================
    ENROLLMENT SUCCESS FIX
 ========================= */
@@ -2157,7 +2159,4 @@ body.dark-mode .enrollment-success p {
   .trial-booking-header h2 {
     font-size: 1.5rem;
   }
-
-}
-
 }
