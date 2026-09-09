@@ -138,6 +138,63 @@ backToHome: "Back to Home",
 
 introText: "At Sulan Language Academy, we are dedicated to helping you achieve fluency and confidence in the languages you need for your personal and professional goals.",
 
+aboutEyebrow: "THE STORY BEHIND SULAN",
+
+aboutLead: "I learned three languages in just 11 months — and that experience completely changed the way I think about language learning.",
+
+aboutStory: "I'm a self-taught polyglot and the founder of Sulan Language Academy. While learning languages myself, I discovered that memorizing more vocabulary or studying more grammar doesn't automatically make you comfortable speaking. Real progress came when I started using the languages consistently, having real conversations, making mistakes, and learning to communicate naturally.",
+
+aboutStoryTwo: "That experience became the foundation of how I teach today. I don't want my students to simply know a language on paper. I want them to actually use it — confidently, naturally, and in the situations that matter to them.",
+
+factPolyglotTitle: "Self-Taught Polyglot",
+factPolyglotText: "3 languages learned in 11 months",
+
+factMultilingualTitle: "Multilingual",
+factMultilingualText: "English • Spanish • Portuguese • French",
+
+factConversationTitle: "Conversation First",
+factConversationText: "Learn by actually using the language",
+
+factPersonalTitle: "Built Around You",
+factPersonalText: "Your level, your goals, your learning plan",
+
+whySulanEyebrow: "WHY SULAN?",
+whySulanTitle: "Language learning should prepare you for real life.",
+
+whySulanText: "I've met learners who have studied a language for years but still hesitate when it's time to speak. Others need a language for work, travel, relocation, study, or international opportunities, but traditional lessons don't always prepare them for the conversations they'll actually have.",
+
+whySulanTextTwo: "I created Sulan Language Academy to bridge that gap. Lessons are practical, conversation-focused, and personalized around what you genuinely need to do with the language.",
+
+aboutCtaEyebrow: "READY TO START?",
+aboutCtaTitle: "Let's build a language plan around you.",
+
+aboutCtaText: "Tell me what you want to achieve, where you are now, and where you want your language skills to take you.",
+
+aboutCtaButton: "Start Learning",
+
+reviewEyebrow: "STUDENT REVIEWS",
+reviewTitle: "Share Your Experience",
+reviewIntro: "Have you taken lessons with Sulan Language Academy? I'd love to hear about your experience.",
+
+reviewNameLabel: "Your Name",
+reviewNamePlaceholder: "Your Name",
+
+reviewEmailLabel: "Your Email",
+reviewEmailPlaceholder: "Your Email",
+reviewEmailNote: "Your email will not be displayed publicly.",
+
+reviewCourseLabel: "Language / Course",
+reviewCoursePlaceholder: "Select your course",
+
+reviewRatingLabel: "Your Rating",
+
+reviewMessageLabel: "Your Review",
+reviewMessagePlaceholder: "Tell us about your experience...",
+
+reviewPermission: "I give Sulan Language Academy permission to publish my review as a testimonial.",
+
+submitReview: "Submit Review",
+
 // English Course Page
 englishCourseHeroTitle: "English Fluency Coaching",
 englishCourseHeroSubtitle: "Speak confidently for work, business, travel, and international opportunities.",
@@ -356,6 +413,65 @@ applicationThanks: "Gracias por solicitar estudiar en Sulan Language Academy. Re
 backToHome: "Volver al inicio",
 
 introText: "En Sulan Language Academy, nos dedicamos a ayudarte a alcanzar fluidez y confianza en los idiomas que necesitas para tus objetivos personales y profesionales.",
+
+aboutEyebrow: "LA HISTORIA DETRÁS DE SULAN",
+
+aboutLead: "Aprendí tres idiomas en solo 11 meses, y esa experiencia cambió por completo mi forma de entender el aprendizaje de idiomas.",
+
+aboutStory: "Soy un políglota autodidacta y el fundador de Sulan Language Academy. Mientras aprendía idiomas por mi cuenta, descubrí que memorizar más vocabulario o estudiar más gramática no significa automáticamente sentirse cómodo al hablar. El verdadero progreso llegó cuando empecé a utilizar los idiomas constantemente, a tener conversaciones reales, a cometer errores y a aprender a comunicarme de forma natural.",
+
+aboutStoryTwo: "Esa experiencia se convirtió en la base de mi forma de enseñar hoy. No quiero que mis estudiantes simplemente conozcan un idioma sobre el papel. Quiero que realmente puedan utilizarlo con confianza, naturalidad y en las situaciones que realmente les importan.",
+
+factPolyglotTitle: "Políglota autodidacta",
+factPolyglotText: "3 idiomas aprendidos en 11 meses",
+
+factMultilingualTitle: "Multilingüe",
+factMultilingualText: "Inglés • Español • Portugués • Francés",
+
+factConversationTitle: "La conversación primero",
+factConversationText: "Aprende utilizando realmente el idioma",
+
+factPersonalTitle: "Creado para ti",
+factPersonalText: "Tu nivel, tus objetivos, tu plan de aprendizaje",
+
+whySulanEyebrow: "¿POR QUÉ SULAN?",
+whySulanTitle: "Aprender un idioma debería prepararte para la vida real.",
+
+whySulanText: "He conocido a personas que han estudiado un idioma durante años y todavía dudan cuando llega el momento de hablar. Otras necesitan un idioma para trabajar, viajar, mudarse, estudiar o acceder a oportunidades internacionales, pero las clases tradicionales no siempre las preparan para las conversaciones que realmente tendrán.",
+
+whySulanTextTwo: "Creé Sulan Language Academy para cerrar esa brecha. Las clases son prácticas, se centran en la conversación y se personalizan según lo que realmente necesitas hacer con el idioma.",
+
+aboutCtaEyebrow: "¿LISTO PARA EMPEZAR?",
+aboutCtaTitle: "Construyamos un plan de aprendizaje a tu medida.",
+
+aboutCtaText: "Cuéntame qué quieres conseguir, dónde estás ahora y hasta dónde quieres que te lleven tus habilidades lingüísticas.",
+
+aboutCtaButton: "Empieza a aprender",
+
+ reviewEyebrow: "OPINIONES DE ESTUDIANTES",
+reviewTitle: "Comparte tu experiencia",
+reviewIntro: "¿Has tomado clases con Sulan Language Academy? Me encantaría conocer tu experiencia.",
+
+reviewNameLabel: "Tu nombre",
+reviewNamePlaceholder: "Tu nombre",
+
+reviewEmailLabel: "Tu correo electrónico",
+reviewEmailPlaceholder: "Tu correo electrónico",
+reviewEmailNote: "Tu correo electrónico no se mostrará públicamente.",
+
+reviewCourseLabel: "Idioma / Curso",
+reviewCoursePlaceholder: "Selecciona tu curso",
+
+reviewRatingLabel: "Tu valoración",
+
+reviewMessageLabel: "Tu opinión",
+reviewMessagePlaceholder: "Cuéntanos sobre tu experiencia...",
+
+reviewPermission: "Doy permiso a Sulan Language Academy para publicar mi opinión como testimonio.",
+
+submitReview: "Enviar opinión",
+
+
 // English Course Page
 englishCourseHeroTitle: "Coaching para dominar el inglés",
 englishCourseHeroSubtitle: "Habla inglés con confianza para el trabajo, los negocios, los viajes y las oportunidades internacionales.",
@@ -576,6 +692,62 @@ backToHome: "Voltar para o início",
 
 introText: "Na Sulan Language Academy, dedicamo-nos a ajudar você a alcançar fluência e confiança nos idiomas de que precisa para seus objetivos pessoais e profissionais.",
 
+aboutEyebrow: "A HISTÓRIA POR TRÁS DA SULAN",
+
+aboutLead: "Aprendi três idiomas em apenas 11 meses — e essa experiência mudou completamente a forma como penso sobre a aprendizagem de idiomas.",
+
+aboutStory: "Sou um poliglota autodidata e fundador da Sulan Language Academy. Enquanto aprendia idiomas por conta própria, descobri que memorizar mais vocabulário ou estudar mais gramática não significa automaticamente sentir-se confortável ao falar. O verdadeiro progresso aconteceu quando comecei a usar os idiomas com frequência, ter conversas reais, cometer erros e aprender a me comunicar naturalmente.",
+
+aboutStoryTwo: "Essa experiência tornou-se a base da forma como ensino hoje. Não quero que os meus alunos simplesmente conheçam um idioma no papel. Quero que realmente consigam usá-lo — com confiança, naturalidade e nas situações que realmente importam para eles.",
+
+factPolyglotTitle: "Poliglota autodidata",
+factPolyglotText: "3 idiomas aprendidos em 11 meses",
+
+factMultilingualTitle: "Multilíngue",
+factMultilingualText: "Inglês • Espanhol • Português • Francês",
+
+factConversationTitle: "Conversação em primeiro lugar",
+factConversationText: "Aprenda usando o idioma de verdade",
+
+factPersonalTitle: "Feito para você",
+factPersonalText: "Seu nível, seus objetivos, seu plano de aprendizagem",
+
+whySulanEyebrow: "POR QUE SULAN?",
+whySulanTitle: "Aprender um idioma deve preparar você para a vida real.",
+
+whySulanText: "Já conheci pessoas que estudaram um idioma durante anos, mas ainda hesitam quando chega a hora de falar. Outras precisam de um idioma para trabalhar, viajar, mudar de país, estudar ou aproveitar oportunidades internacionais, mas as aulas tradicionais nem sempre as preparam para as conversas que realmente terão.",
+
+whySulanTextTwo: "Criei a Sulan Language Academy para preencher essa lacuna. As aulas são práticas, focadas em conversação e personalizadas de acordo com aquilo que você realmente precisa fazer com o idioma.",
+
+aboutCtaEyebrow: "PRONTO PARA COMEÇAR?",
+aboutCtaTitle: "Vamos criar um plano de aprendizagem feito para você.",
+
+aboutCtaText: "Conte-me o que você quer alcançar, onde está agora e até onde quer que suas habilidades linguísticas levem você.",
+
+aboutCtaButton: "Começar a aprender",
+
+reviewEyebrow: "AVALIAÇÕES DOS ALUNOS",
+reviewTitle: "Compartilhe sua experiência",
+reviewIntro: "Você já teve aulas com a Sulan Language Academy? Eu adoraria saber como foi a sua experiência.",
+
+reviewNameLabel: "Seu nome",
+reviewNamePlaceholder: "Seu nome",
+
+reviewEmailLabel: "Seu e-mail",
+reviewEmailPlaceholder: "Seu e-mail",
+reviewEmailNote: "Seu e-mail não será exibido publicamente.",
+
+reviewCourseLabel: "Idioma / Curso",
+reviewCoursePlaceholder: "Selecione seu curso",
+
+reviewRatingLabel: "Sua avaliação",
+
+reviewMessageLabel: "Sua opinião",
+reviewMessagePlaceholder: "Conte-nos sobre sua experiência...",
+
+reviewPermission: "Autorizo a Sulan Language Academy a publicar minha avaliação como depoimento.",
+
+submitReview: "Enviar avaliação",
 // English Course Page
 englishCourseHeroTitle: "Coaching para dominar o inglês",
 englishCourseHeroSubtitle: "Fale inglês com confiança para trabalho, negócios, viagens e oportunidades internacionais.",
@@ -796,6 +968,63 @@ backToHome: "返回首页",
 
 introText: "在 Sulan Language Academy，我们致力于帮助您掌握所需的语言并建立自信，从而实现您的个人和职业目标。",
 
+aboutEyebrow: "SULAN 背后的故事",
+
+aboutLead: "我在短短 11 个月内学会了三门语言——这段经历彻底改变了我对语言学习的看法。",
+
+aboutStory: "我是一名自学成才的多语者，也是 Sulan Language Academy 的创始人。在自学语言的过程中，我发现，记住更多词汇或学习更多语法，并不意味着你在开口说话时就会自然自信。真正的进步来自持续使用语言、进行真实对话、允许自己犯错，并逐渐学会自然地交流。",
+
+aboutStoryTwo: "这段经历也成为了我今天教学方法的基础。我不希望学生只是在书本上“懂”一门语言。我希望他们能够真正使用它——自信、自然地在对自己重要的场景中交流。",
+
+factPolyglotTitle: "自学多语者",
+factPolyglotText: "11 个月学会 3 门语言",
+
+factMultilingualTitle: "多语言能力",
+factMultilingualText: "英语 • 西班牙语 • 葡萄牙语 • 法语",
+
+factConversationTitle: "对话优先",
+factConversationText: "通过真正使用语言来学习",
+
+factPersonalTitle: "为你量身打造",
+factPersonalText: "你的水平、你的目标、你的学习计划",
+
+whySulanEyebrow: "为什么选择 SULAN？",
+whySulanTitle: "语言学习应该让你为真实生活做好准备。",
+
+whySulanText: "我遇到过一些学习语言多年的人，但真正需要开口时仍然会犹豫。还有一些人为了工作、旅行、移居、留学或国际发展机会而学习语言，但传统课程并不总能让他们为现实中真正会遇到的对话做好准备。",
+
+whySulanTextTwo: "我创办 Sulan Language Academy，就是为了弥补这一差距。课程注重实用交流和真实对话，并根据你真正需要使用语言的场景和目标进行个性化设计。",
+
+aboutCtaEyebrow: "准备好开始了吗？",
+aboutCtaTitle: "让我们为你制定专属的语言学习计划。",
+
+aboutCtaText: "告诉我你的目标、你目前的水平，以及你希望语言能力带你走向哪里。",
+
+aboutCtaButton: "开始学习",
+
+reviewEyebrow: "学生评价",
+reviewTitle: "分享你的学习体验",
+reviewIntro: "你曾在 Sulan Language Academy 上过课吗？我很希望听听你的学习体验。",
+
+reviewNameLabel: "你的姓名",
+reviewNamePlaceholder: "你的姓名",
+
+reviewEmailLabel: "你的电子邮箱",
+reviewEmailPlaceholder: "你的电子邮箱",
+reviewEmailNote: "你的电子邮箱不会公开显示。",
+
+reviewCourseLabel: "语言 / 课程",
+reviewCoursePlaceholder: "请选择你的课程",
+
+reviewRatingLabel: "你的评分",
+
+reviewMessageLabel: "你的评价",
+reviewMessagePlaceholder: "和我们分享一下你的学习体验吧……",
+
+reviewPermission: "我同意 Sulan Language Academy 将我的评价作为学员反馈公开展示。",
+
+submitReview: "提交评价",
+
 // English Course Page
 englishCourseHeroTitle: "英语流利度辅导",
 englishCourseHeroSubtitle: "自信地使用英语进行工作、商务、旅行和把握国际机会。",
@@ -968,6 +1197,66 @@ fr: {
 
   globalOpportunities: "Opportunités internationales",
   globalOpportunitiesDescription: "Développez des compétences linguistiques utiles pour voyager, travailler, étudier et créer des liens à l’international.",
+
+  aboutEyebrow: "L'HISTOIRE DERRIÈRE SULAN",
+
+aboutLead: "J'ai appris trois langues en seulement 11 mois — et cette expérience a complètement changé ma façon de voir l'apprentissage des langues.",
+
+aboutStory: "Je suis polyglotte autodidacte et fondateur de Sulan Language Academy. En apprenant moi-même des langues, j'ai découvert que mémoriser davantage de vocabulaire ou étudier davantage de grammaire ne permet pas automatiquement d'être à l'aise à l'oral. J'ai réellement progressé lorsque j'ai commencé à utiliser les langues régulièrement, à avoir de vraies conversations, à faire des erreurs et à apprendre à communiquer naturellement.",
+
+aboutStoryTwo: "Cette expérience est devenue la base de ma façon d'enseigner aujourd'hui. Je ne veux pas que mes étudiants connaissent simplement une langue en théorie. Je veux qu'ils puissent réellement l'utiliser — avec confiance, naturellement et dans les situations qui comptent vraiment pour eux.",
+
+factPolyglotTitle: "Polyglotte autodidacte",
+factPolyglotText: "3 langues apprises en 11 mois",
+
+factMultilingualTitle: "Multilingue",
+factMultilingualText: "Anglais • Espagnol • Portugais • Français",
+
+factConversationTitle: "La conversation d'abord",
+factConversationText: "Apprenez en utilisant réellement la langue",
+
+factPersonalTitle: "Conçu autour de vous",
+factPersonalText: "Votre niveau, vos objectifs, votre plan d'apprentissage",
+
+whySulanEyebrow: "POURQUOI SULAN ?",
+whySulanTitle: "Apprendre une langue devrait vous préparer à la vie réelle.",
+
+whySulanText: "J'ai rencontré des personnes qui étudient une langue depuis des années mais qui hésitent encore lorsqu'il faut parler. D'autres ont besoin d'une langue pour travailler, voyager, s'installer dans un autre pays, étudier ou saisir des opportunités internationales, mais les cours traditionnels ne les préparent pas toujours aux conversations qu'elles auront réellement.",
+
+whySulanTextTwo: "J'ai créé Sulan Language Academy pour combler ce fossé. Les cours sont pratiques, axés sur la conversation et personnalisés en fonction de ce que vous avez réellement besoin de faire avec la langue.",
+
+aboutCtaEyebrow: "PRÊT À COMMENCER ?",
+aboutCtaTitle: "Créons un plan d'apprentissage adapté à vos besoins.",
+
+aboutCtaText: "Dites-moi ce que vous voulez accomplir, où vous en êtes aujourd'hui et jusqu'où vous souhaitez que vos compétences linguistiques vous mènent.",
+
+aboutCtaButton: "Commencer à apprendre",
+
+reviewEyebrow: "AVIS DES ÉTUDIANTS",
+reviewTitle: "Partagez votre expérience",
+reviewIntro: "Vous avez suivi des cours avec Sulan Language Academy ? J'aimerais beaucoup connaître votre expérience.",
+
+reviewNameLabel: "Votre nom",
+reviewNamePlaceholder: "Votre nom",
+
+reviewEmailLabel: "Votre adresse e-mail",
+reviewEmailPlaceholder: "Votre adresse e-mail",
+reviewEmailNote: "Votre adresse e-mail ne sera pas affichée publiquement.",
+
+reviewCourseLabel: "Langue / Cours",
+reviewCoursePlaceholder: "Sélectionnez votre cours",
+
+reviewRatingLabel: "Votre note",
+
+reviewMessageLabel: "Votre avis",
+reviewMessagePlaceholder: "Parlez-nous de votre expérience...",
+
+reviewPermission: "J'autorise Sulan Language Academy à publier mon avis comme témoignage.",
+
+submitReview: "Envoyer mon avis",
+
+reviewSuccessTitle: "Merci pour votre avis !",
+reviewSuccessText: "Vos commentaires ont été reçus et seront examinés avant d'être publiés.",
 
   // Contact
   contactHeroTitle: "Parlons-en",

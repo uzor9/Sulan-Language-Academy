@@ -2160,3 +2160,422 @@ body.dark-mode .enrollment-success p {
     font-size: 1.5rem;
   }
 }
+
+/* =========================
+   ABOUT PAGE - FOUNDER STORY
+========================= */
+
+.about-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0f766e;
+  margin-bottom: 10px;
+}
+
+.about-lead {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 20px 0;
+}
+
+.about-text p {
+  line-height: 1.9;
+}
+
+
+/* QUICK FACTS */
+
+.about-facts {
+  max-width: 1100px;
+  margin: 20px auto 80px;
+  padding: 0 25px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.about-fact {
+  padding: 28px 20px;
+  border-radius: 18px;
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid rgba(15, 118, 110, 0.12);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-fact i {
+  display: block;
+  font-size: 1.7rem;
+  color: #0f766e;
+  margin-bottom: 15px;
+}
+
+.about-fact strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.about-fact span {
+  font-size: 0.88rem;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+
+/* WHY SULAN */
+
+.about-story-section {
+  max-width: 950px;
+  margin: 0 auto 80px;
+  padding: 0 25px;
+}
+
+.about-story-card {
+  padding: 50px;
+  border-radius: 25px;
+  background: rgba(15, 118, 110, 0.07);
+}
+
+.about-story-card h2 {
+  font-size: 2rem;
+  margin: 8px 0 20px;
+}
+
+.about-story-card p {
+  line-height: 1.9;
+}
+
+
+/* ABOUT CTA */
+
+.about-cta {
+  max-width: 850px;
+  margin: 90px auto;
+  padding: 60px 35px;
+  text-align: center;
+
+  border-radius: 28px;
+  background: rgba(15, 118, 110, 0.08);
+}
+
+.about-cta h2 {
+  margin: 8px 0 15px;
+  font-size: 2rem;
+}
+
+.about-cta p {
+  max-width: 650px;
+  margin: 0 auto 28px;
+  line-height: 1.8;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .about-fact {
+  background: #1f2937;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .about-story-card,
+body.dark-mode .about-cta {
+  background: rgba(15, 118, 110, 0.13);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .about-facts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .about-fact {
+    padding: 23px 15px;
+  }
+
+  .about-story-card {
+    padding: 32px 24px;
+  }
+
+  .about-story-card h2,
+  .about-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-lead {
+    font-size: 1.1rem;
+  }
+
+  .about-cta {
+    margin: 60px 15px;
+    padding: 45px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-facts {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================
+   STUDENT REVIEW SECTION
+========================= */
+
+.review-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 25px;
+}
+
+.review-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 50px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(15, 118, 110, 0.1);
+}
+
+.review-eyebrow {
+  color: #0f766e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.review-card > h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+
+.review-intro {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  text-align: center;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+
+/* FORM */
+
+#reviewForm {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.review-field {
+  margin-bottom: 24px;
+}
+
+.review-field > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.review-field input[type="text"],
+.review-field input[type="email"],
+.review-field select,
+.review-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+
+  background: #ffffff;
+  color: #111827;
+
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-field input:focus,
+.review-field select:focus,
+.review-field textarea:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+}
+
+.review-field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.review-field small {
+  display: block;
+  margin-top: 7px;
+  opacity: 0.6;
+  font-size: 0.78rem;
+}
+
+
+/* STAR RATING */
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 2.2rem;
+  color: #d1d5db;
+  cursor: pointer;
+  line-height: 1;
+
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+  color: #f59e0b;
+}
+
+.star-rating label:hover {
+  transform: scale(1.12);
+}
+
+
+/* PUBLISH PERMISSION */
+
+.review-permission {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin: 5px 0 28px;
+
+  font-size: 0.85rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.review-permission input {
+  margin-top: 4px;
+  accent-color: #0f766e;
+}
+
+
+/* REVIEW BUTTON */
+
+#reviewForm .signup-button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .review-card {
+  background: #1f2937;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .review-field input,
+body.dark-mode .review-field select,
+body.dark-mode .review-field textarea {
+  background: #111827;
+  color: #ffffff;
+  border-color: #374151;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .review-section {
+    margin: 55px auto;
+    padding: 0 15px;
+  }
+
+  .review-card {
+    padding: 35px 22px;
+    border-radius: 22px;
+  }
+
+  .review-card > h2 {
+    font-size: 1.6rem;
+  }
+
+  .star-rating label {
+    font-size: 2rem;
+  }
+}
+
+/* =========================
+   REVIEW SUCCESS MESSAGE
+========================= */
+
+.review-success {
+  text-align: center;
+  padding: 35px 20px 20px;
+  animation: reviewSuccessFade 0.4s ease;
+}
+
+.review-success-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.12);
+  color: #f59e0b;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.review-success h3 {
+  font-size: 1.6rem;
+  margin: 0 0 10px;
+}
+
+.review-success p {
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+@keyframes reviewSuccessFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
