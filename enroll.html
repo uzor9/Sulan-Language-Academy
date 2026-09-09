@@ -288,6 +288,156 @@
 
         </div>
 
+        <!-- =========================
+     FREE TRIAL BOOKING
+========================= -->
+
+<div class="trial-booking">
+
+  <div class="trial-booking-header">
+
+    <p class="eyebrow" data-i18n="freeTrial">
+      FREE 30-MINUTE TRIAL
+    </p>
+
+    <h2 data-i18n="bookTrialTitle">
+      Book Your Free Trial
+    </h2>
+
+    <p data-i18n="bookTrialDescription">
+      Select an available date and choose a time that works for you.
+    </p>
+
+    <p class="timezone-note">
+      🌍
+      <span data-i18n="timesShownIn">
+        Times shown in your local timezone:
+      </span>
+      <strong id="studentTimezone"></strong>
+    </p>
+
+  </div>
+
+
+  <!-- CALENDAR -->
+
+  <div class="trial-calendar">
+
+    <div class="calendar-header">
+
+      <button
+        type="button"
+        id="previousMonth"
+        class="calendar-arrow"
+        aria-label="Previous month"
+      >
+        ‹
+      </button>
+
+      <h3 id="calendarMonth">
+        August 2026
+      </h3>
+
+      <button
+        type="button"
+        id="nextMonth"
+        class="calendar-arrow"
+        aria-label="Next month"
+      >
+        ›
+      </button>
+
+    </div>
+
+
+    <div class="calendar-weekdays">
+      <span>Mon</span>
+      <span>Tue</span>
+      <span>Wed</span>
+      <span>Thu</span>
+      <span>Fri</span>
+      <span>Sat</span>
+      <span>Sun</span>
+    </div>
+
+
+    <div
+      class="calendar-days"
+      id="calendarDays"
+    >
+      <!-- JavaScript will generate the days -->
+    </div>
+
+  </div>
+
+
+  <!-- AVAILABLE TIMES -->
+
+  <div
+    class="trial-times-section"
+    id="trialTimesSection"
+  >
+
+    <h3 data-i18n="availableTimes">
+      Available Times
+    </h3>
+
+    <p
+      id="selectedDateLabel"
+      class="selected-date-label"
+      data-i18n="selectDateFirst"
+    >
+      Select an available date to see times.
+    </p>
+
+    <div
+      class="trial-time-slots"
+      id="trialTimeSlots"
+    >
+    </div>
+
+  </div>
+
+
+  <!-- SELECTED BOOKING -->
+
+  <div
+    class="trial-selection"
+    id="trialSelection"
+  >
+
+    <span data-i18n="yourTrial">
+      Your trial:
+    </span>
+
+    <strong id="trialSelectionText">
+      No time selected
+    </strong>
+
+  </div>
+
+
+  <!-- VALUES SUBMITTED WITH APPLICATION -->
+
+  <input
+    type="hidden"
+    id="trialDate"
+    name="trialDate"
+  >
+
+  <input
+    type="hidden"
+    id="trialTime"
+    name="trialTime"
+  >
+
+  <input
+    type="hidden"
+    id="trialTimezone"
+    name="trialTimezone"
+  >
+
+</div>
 
         <!-- SUBMIT -->
 

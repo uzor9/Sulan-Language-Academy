@@ -480,4 +480,1032 @@ if (enrollmentForm) {
 
   });
 
+  // ==================================================
+// FREE TRIAL BOOKING CALENDAR
+// ==================================================
+
+const calendarDays = document.getElementById("calendarDays");
+const calendarMonth = document.getElementById("calendarMonth");
+const previousMonthBtn = document.getElementById("previousMonth");
+const nextMonthBtn = document.getElementById("nextMonth");
+
+const trialTimeSlots = document.getElementById("trialTimeSlots");
+const selectedDateLabel = document.getElementById("selectedDateLabel");
+const studentTimezone = document.getElementById("studentTimezone");
+
+const trialDateInput = document.getElementById("trialDate");
+const trialTimeInput = document.getElementById("trialTime");
+const trialTimezoneInput = document.getElementById("trialTimezone");
+
+const trialSelectionText = document.getElementById("trialSelectionText");
+
+
+// --------------------------------------------------
+// STUDENT TIMEZONE
+// --------------------------------------------------
+
+const detectedTimezone =
+  Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+
+if (studentTimezone) {
+  studentTimezone.textContent = detectedTimezone;
 }
+
+if (trialTimezoneInput) {
+  trialTimezoneInput.value = detectedTimezone;
+}
+
+
+// --------------------------------------------------
+// CALENDAR STATE
+// --------------------------------------------------
+
+const today = new Date();
+
+today.setHours(0, 0, 0, 0);
+
+let displayedYear = today.getFullYear();
+let displayedMonth = today.getMonth();
+
+let selectedTrialDate = null;
+let selectedTrialTime = null;
+
+
+// --------------------------------------------------
+// TEMPORARY TEST AVAILABILITY
+//
+// This is ONLY for building/testing the interface.
+// We'll replace this with real availability later.
+// --------------------------------------------------
+
+function getTemporaryAvailability(date) {
+
+  const day = date.getDay();
+
+  // Sunday = unavailable
+  if (day === 0) {
+    return [];
+  }
+
+  // Example test slots
+  if (day === 6) {
+    return ["10:00", "12:00", "15:00"];
+  }
+
+  return ["10:00", "13:00", "16:00", "18:00"];
+}
+
+
+// --------------------------------------------------
+// FORMAT MONTH
+// --------------------------------------------------
+
+function formatCalendarMonth(year, month) {
+
+  const date = new Date(year, month, 1);
+
+  return new Intl.DateTimeFormat(
+    localStorage.getItem("language") || "en",
+    {
+      month: "long",
+      year: "numeric"
+    }
+  ).format(date);
+}
+
+
+// --------------------------------------------------
+// FORMAT DATE
+// --------------------------------------------------
+
+function formatSelectedDate(date) {
+
+  return new Intl.DateTimeFormat(
+    localStorage.getItem("language") || "en",
+    {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    }
+  ).format(date);
+}
+
+
+// --------------------------------------------------
+// FORMAT TIME
+// --------------------------------------------------
+
+function formatTrialTime(time) {
+
+  const [hour, minute] = time.split(":");
+
+  const date = new Date();
+
+  date.setHours(
+    Number(hour),
+    Number(minute),
+    0,
+    0
+  );
+
+  return new Intl.DateTimeFormat(
+    localStorage.getItem("language") || "en",
+    {
+      hour: "numeric",
+      minute: "2-digit"
+    }
+  ).format(date);
+}
+
+
+// --------------------------------------------------
+// CREATE CALENDAR
+// --------------------------------------------------
+
+function renderTrialCalendar() {
+
+  if (!calendarDays || !calendarMonth) {
+    return;
+  }
+
+  calendarDays.innerHTML = "";
+
+  calendarMonth.textContent =
+    formatCalendarMonth(displayedYear, displayedMonth);
+
+
+  const firstDay =
+    new Date(displayedYear, displayedMonth, 1);
+
+  const lastDay =
+    new Date(displayedYear, displayedMonth + 1, 0);
+
+  const daysInMonth =
+    lastDay.getDate();
+
+
+  // Convert Sunday-first JS numbering
+  // to Monday-first calendar numbering.
+
+  let startingPosition = firstDay.getDay();
+
+  startingPosition =
+    startingPosition === 0
+      ? 6
+      : startingPosition - 1;
+
+
+  // Empty spaces before day 1
+
+  for (let i = 0; i < startingPosition; i++) {
+
+    const emptyDay =
+      document.createElement("div");
+
+    emptyDay.className =
+      "calendar-day empty";
+
+    calendarDays.appendChild(emptyDay);
+  }
+
+
+  // Actual month days
+
+  for (let dayNumber = 1; dayNumber <= daysInMonth; dayNumber++) {
+
+    const date =
+      new Date(
+        displayedYear,
+        displayedMonth,
+        dayNumber
+      );
+
+    date.setHours(0, 0, 0, 0);
+
+
+    const dayButton =
+      document.createElement("button");
+
+    dayButton.type = "button";
+    dayButton.className = "calendar-day";
+    dayButton.textContent = dayNumber;
+
+
+    const availability =
+      getTemporaryAvailability(date);
+
+
+    // Past date
+
+    if (date < today) {
+
+      dayButton.classList.add("unavailable");
+      dayButton.disabled = true;
+
+    }
+
+    // No availability
+
+    else if (availability.length === 0) {
+
+      dayButton.classList.add("unavailable");
+      dayButton.disabled = true;
+
+    }
+
+    // Available
+
+    else {
+
+      dayButton.classList.add("available");
+
+      dayButton.addEventListener(
+        "click",
+        function () {
+
+          selectTrialDate(date);
+
+        }
+      );
+
+    }
+
+
+    // Keep selected day highlighted
+
+    if (
+      selectedTrialDate &&
+      selectedTrialDate.getFullYear() === date.getFullYear() &&
+      selectedTrialDate.getMonth() === date.getMonth() &&
+      selectedTrialDate.getDate() === date.getDate()
+    ) {
+
+      dayButton.classList.add("selected");
+
+    }
+
+
+    calendarDays.appendChild(dayButton);
+  }
+
+}
+
+
+// --------------------------------------------------
+// SELECT DATE
+// --------------------------------------------------
+
+function selectTrialDate(date) {
+
+  selectedTrialDate =
+    new Date(date);
+
+  selectedTrialTime = null;
+
+
+  if (trialDateInput) {
+
+    const year =
+      selectedTrialDate.getFullYear();
+
+    const month =
+      String(
+        selectedTrialDate.getMonth() + 1
+      ).padStart(2, "0");
+
+    const day =
+      String(
+        selectedTrialDate.getDate()
+      ).padStart(2, "0");
+
+
+    trialDateInput.value =
+      `${year}-${month}-${day}`;
+
+  }
+
+
+  if (trialTimeInput) {
+    trialTimeInput.value = "";
+  }
+
+
+  if (selectedDateLabel) {
+
+    selectedDateLabel.textContent =
+      formatSelectedDate(selectedTrialDate);
+
+  }
+
+
+  if (trialSelectionText) {
+
+    trialSelectionText.textContent =
+      "No time selected";
+
+  }
+
+
+  renderTrialCalendar();
+  renderTrialTimes();
+
+}
+
+
+// --------------------------------------------------
+// RENDER AVAILABLE TIMES
+// --------------------------------------------------
+
+function renderTrialTimes() {
+
+  if (!trialTimeSlots || !selectedTrialDate) {
+    return;
+  }
+
+
+  trialTimeSlots.innerHTML = "";
+
+
+  const availableTimes =
+    getTemporaryAvailability(
+      selectedTrialDate
+    );
+
+
+  availableTimes.forEach(function (time) {
+
+    const timeButton =
+      document.createElement("button");
+
+    timeButton.type = "button";
+
+    timeButton.className =
+      "trial-time-slot";
+
+    timeButton.textContent =
+      formatTrialTime(time);
+
+
+    timeButton.addEventListener(
+      "click",
+      function () {
+
+        selectTrialTime(
+          time,
+          timeButton
+        );
+
+      }
+    );
+
+
+    trialTimeSlots.appendChild(
+      timeButton
+    );
+
+  });
+
+}
+
+
+// --------------------------------------------------
+// SELECT TIME
+// --------------------------------------------------
+
+function selectTrialTime(time, clickedButton) {
+
+  selectedTrialTime = time;
+
+
+  document
+    .querySelectorAll(".trial-time-slot")
+    .forEach(function (button) {
+
+      button.classList.remove("selected");
+
+    });
+
+
+  clickedButton.classList.add("selected");
+
+
+  if (trialTimeInput) {
+    trialTimeInput.value = time;
+  }
+
+
+  if (
+    trialSelectionText &&
+    selectedTrialDate
+  ) {
+
+    trialSelectionText.textContent =
+      `${formatSelectedDate(selectedTrialDate)} · ${formatTrialTime(time)}`;
+
+  }
+
+}
+
+
+// --------------------------------------------------
+// PREVIOUS MONTH
+// --------------------------------------------------
+
+if (previousMonthBtn) {
+
+  previousMonthBtn.addEventListener(
+    "click",
+    function () {
+
+      const previousMonthDate =
+        new Date(
+          displayedYear,
+          displayedMonth - 1,
+          1
+        );
+
+
+      // Don't navigate to months
+      // completely before the current month.
+
+      const currentMonthStart =
+        new Date(
+          today.getFullYear(),
+          today.getMonth(),
+          1
+        );
+
+
+      if (previousMonthDate < currentMonthStart) {
+        return;
+      }
+
+
+      displayedMonth--;
+
+      if (displayedMonth < 0) {
+
+        displayedMonth = 11;
+        displayedYear--;
+
+      }
+
+
+      renderTrialCalendar();
+
+    }
+  );
+
+}
+
+
+// --------------------------------------------------
+// NEXT MONTH
+// --------------------------------------------------
+
+if (nextMonthBtn) {
+
+  nextMonthBtn.addEventListener(
+    "click",
+    function () {
+
+      displayedMonth++;
+
+      if (displayedMonth > 11) {
+
+        displayedMonth = 0;
+        displayedYear++;
+
+      }
+
+
+      renderTrialCalendar();
+
+    }
+  );
+
+}
+
+
+// --------------------------------------------------
+// INITIAL RENDER
+// --------------------------------------------------
+
+renderTrialCalendar();
+
+}
+
+// ==================================================
+// FREE TRIAL BOOKING CALENDAR
+// ==================================================
+
+const calendarDays = document.getElementById("calendarDays");
+const calendarMonth = document.getElementById("calendarMonth");
+const previousMonthBtn = document.getElementById("previousMonth");
+const nextMonthBtn = document.getElementById("nextMonth");
+
+const trialTimeSlots = document.getElementById("trialTimeSlots");
+const selectedDateLabel = document.getElementById("selectedDateLabel");
+const studentTimezone = document.getElementById("studentTimezone");
+
+const trialDateInput = document.getElementById("trialDate");
+const trialTimeInput = document.getElementById("trialTime");
+const trialTimezoneInput = document.getElementById("trialTimezone");
+
+const trialSelectionText = document.getElementById("trialSelectionText");
+
+
+// --------------------------------------------------
+// STUDENT TIMEZONE
+// --------------------------------------------------
+
+const detectedTimezone =
+  Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+
+if (studentTimezone) {
+  studentTimezone.textContent = detectedTimezone;
+}
+
+if (trialTimezoneInput) {
+  trialTimezoneInput.value = detectedTimezone;
+}
+
+
+// --------------------------------------------------
+// CALENDAR STATE
+// --------------------------------------------------
+
+const today = new Date();
+
+today.setHours(0, 0, 0, 0);
+
+let displayedYear = today.getFullYear();
+let displayedMonth = today.getMonth();
+
+let selectedTrialDate = null;
+let selectedTrialTime = null;
+
+
+// --------------------------------------------------
+// TEMPORARY TEST AVAILABILITY
+//
+// This is ONLY for building/testing the interface.
+// We'll replace this with real availability later.
+// --------------------------------------------------
+
+function getTemporaryAvailability(date) {
+
+  const day = date.getDay();
+
+  // Sunday = unavailable
+  if (day === 0) {
+    return [];
+  }
+
+  // Example test slots
+  if (day === 6) {
+    return ["10:00", "12:00", "15:00"];
+  }
+
+  return ["10:00", "13:00", "16:00", "18:00"];
+}
+
+
+// --------------------------------------------------
+// FORMAT MONTH
+// --------------------------------------------------
+
+function formatCalendarMonth(year, month) {
+
+  const date = new Date(year, month, 1);
+
+  return new Intl.DateTimeFormat(
+    localStorage.getItem("language") || "en",
+    {
+      month: "long",
+      year: "numeric"
+    }
+  ).format(date);
+}
+
+
+// --------------------------------------------------
+// FORMAT DATE
+// --------------------------------------------------
+
+function formatSelectedDate(date) {
+
+  return new Intl.DateTimeFormat(
+    localStorage.getItem("language") || "en",
+    {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    }
+  ).format(date);
+}
+
+
+// --------------------------------------------------
+// FORMAT TIME
+// --------------------------------------------------
+
+function formatTrialTime(time) {
+
+  const [hour, minute] = time.split(":");
+
+  const date = new Date();
+
+  date.setHours(
+    Number(hour),
+    Number(minute),
+    0,
+    0
+  );
+
+  return new Intl.DateTimeFormat(
+    localStorage.getItem("language") || "en",
+    {
+      hour: "numeric",
+      minute: "2-digit"
+    }
+  ).format(date);
+}
+
+
+// --------------------------------------------------
+// CREATE CALENDAR
+// --------------------------------------------------
+
+function renderTrialCalendar() {
+
+  if (!calendarDays || !calendarMonth) {
+    return;
+  }
+
+  calendarDays.innerHTML = "";
+
+  calendarMonth.textContent =
+    formatCalendarMonth(displayedYear, displayedMonth);
+
+
+  const firstDay =
+    new Date(displayedYear, displayedMonth, 1);
+
+  const lastDay =
+    new Date(displayedYear, displayedMonth + 1, 0);
+
+  const daysInMonth =
+    lastDay.getDate();
+
+
+  // Convert Sunday-first JS numbering
+  // to Monday-first calendar numbering.
+
+  let startingPosition = firstDay.getDay();
+
+  startingPosition =
+    startingPosition === 0
+      ? 6
+      : startingPosition - 1;
+
+
+  // Empty spaces before day 1
+
+  for (let i = 0; i < startingPosition; i++) {
+
+    const emptyDay =
+      document.createElement("div");
+
+    emptyDay.className =
+      "calendar-day empty";
+
+    calendarDays.appendChild(emptyDay);
+  }
+
+
+  // Actual month days
+
+  for (let dayNumber = 1; dayNumber <= daysInMonth; dayNumber++) {
+
+    const date =
+      new Date(
+        displayedYear,
+        displayedMonth,
+        dayNumber
+      );
+
+    date.setHours(0, 0, 0, 0);
+
+
+    const dayButton =
+      document.createElement("button");
+
+    dayButton.type = "button";
+    dayButton.className = "calendar-day";
+    dayButton.textContent = dayNumber;
+
+
+    const availability =
+      getTemporaryAvailability(date);
+
+
+    // Past date
+
+    if (date < today) {
+
+      dayButton.classList.add("unavailable");
+      dayButton.disabled = true;
+
+    }
+
+    // No availability
+
+    else if (availability.length === 0) {
+
+      dayButton.classList.add("unavailable");
+      dayButton.disabled = true;
+
+    }
+
+    // Available
+
+    else {
+
+      dayButton.classList.add("available");
+
+      dayButton.addEventListener(
+        "click",
+        function () {
+
+          selectTrialDate(date);
+
+        }
+      );
+
+    }
+
+
+    // Keep selected day highlighted
+
+    if (
+      selectedTrialDate &&
+      selectedTrialDate.getFullYear() === date.getFullYear() &&
+      selectedTrialDate.getMonth() === date.getMonth() &&
+      selectedTrialDate.getDate() === date.getDate()
+    ) {
+
+      dayButton.classList.add("selected");
+
+    }
+
+
+    calendarDays.appendChild(dayButton);
+  }
+
+}
+
+
+// --------------------------------------------------
+// SELECT DATE
+// --------------------------------------------------
+
+function selectTrialDate(date) {
+
+  selectedTrialDate =
+    new Date(date);
+
+  selectedTrialTime = null;
+
+
+  if (trialDateInput) {
+
+    const year =
+      selectedTrialDate.getFullYear();
+
+    const month =
+      String(
+        selectedTrialDate.getMonth() + 1
+      ).padStart(2, "0");
+
+    const day =
+      String(
+        selectedTrialDate.getDate()
+      ).padStart(2, "0");
+
+
+    trialDateInput.value =
+      `${year}-${month}-${day}`;
+
+  }
+
+
+  if (trialTimeInput) {
+    trialTimeInput.value = "";
+  }
+
+
+  if (selectedDateLabel) {
+
+    selectedDateLabel.textContent =
+      formatSelectedDate(selectedTrialDate);
+
+  }
+
+
+  if (trialSelectionText) {
+
+    trialSelectionText.textContent =
+      "No time selected";
+
+  }
+
+
+  renderTrialCalendar();
+  renderTrialTimes();
+
+}
+
+
+// --------------------------------------------------
+// RENDER AVAILABLE TIMES
+// --------------------------------------------------
+
+function renderTrialTimes() {
+
+  if (!trialTimeSlots || !selectedTrialDate) {
+    return;
+  }
+
+
+  trialTimeSlots.innerHTML = "";
+
+
+  const availableTimes =
+    getTemporaryAvailability(
+      selectedTrialDate
+    );
+
+
+  availableTimes.forEach(function (time) {
+
+    const timeButton =
+      document.createElement("button");
+
+    timeButton.type = "button";
+
+    timeButton.className =
+      "trial-time-slot";
+
+    timeButton.textContent =
+      formatTrialTime(time);
+
+
+    timeButton.addEventListener(
+      "click",
+      function () {
+
+        selectTrialTime(
+          time,
+          timeButton
+        );
+
+      }
+    );
+
+
+    trialTimeSlots.appendChild(
+      timeButton
+    );
+
+  });
+
+}
+
+
+// --------------------------------------------------
+// SELECT TIME
+// --------------------------------------------------
+
+function selectTrialTime(time, clickedButton) {
+
+  selectedTrialTime = time;
+
+
+  document
+    .querySelectorAll(".trial-time-slot")
+    .forEach(function (button) {
+
+      button.classList.remove("selected");
+
+    });
+
+
+  clickedButton.classList.add("selected");
+
+
+  if (trialTimeInput) {
+    trialTimeInput.value = time;
+  }
+
+
+  if (
+    trialSelectionText &&
+    selectedTrialDate
+  ) {
+
+    trialSelectionText.textContent =
+      `${formatSelectedDate(selectedTrialDate)} · ${formatTrialTime(time)}`;
+
+  }
+
+}
+
+
+// --------------------------------------------------
+// PREVIOUS MONTH
+// --------------------------------------------------
+
+if (previousMonthBtn) {
+
+  previousMonthBtn.addEventListener(
+    "click",
+    function () {
+
+      const previousMonthDate =
+        new Date(
+          displayedYear,
+          displayedMonth - 1,
+          1
+        );
+
+
+      // Don't navigate to months
+      // completely before the current month.
+
+      const currentMonthStart =
+        new Date(
+          today.getFullYear(),
+          today.getMonth(),
+          1
+        );
+
+
+      if (previousMonthDate < currentMonthStart) {
+        return;
+      }
+
+
+      displayedMonth--;
+
+      if (displayedMonth < 0) {
+
+        displayedMonth = 11;
+        displayedYear--;
+
+      }
+
+
+      renderTrialCalendar();
+
+    }
+  );
+
+}
+
+
+// --------------------------------------------------
+// NEXT MONTH
+// --------------------------------------------------
+
+if (nextMonthBtn) {
+
+  nextMonthBtn.addEventListener(
+    "click",
+    function () {
+
+      displayedMonth++;
+
+      if (displayedMonth > 11) {
+
+        displayedMonth = 0;
+        displayedYear++;
+
+      }
+
+
+      renderTrialCalendar();
+
+    }
+  );
+
+}
+
+
+// --------------------------------------------------
+// INITIAL RENDER
+// --------------------------------------------------
+
+renderTrialCalendar();

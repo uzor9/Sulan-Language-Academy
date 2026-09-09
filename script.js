@@ -182,3 +182,4 @@ if (languageSwitcher) {
 }
 
 changeLanguage(savedLanguage);
+

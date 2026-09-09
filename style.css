@@ -1877,4 +1877,287 @@ body.dark-mode .enrollment-success p {
 
 }
 
+/* =========================
+   TRIAL BOOKING
+========================= */
+
+.trial-booking {
+  margin-top: 45px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.trial-booking-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.trial-booking-header h2 {
+  margin: 8px 0 10px;
+  font-size: 1.8rem;
+}
+
+.trial-booking-header p {
+  margin: 6px 0;
+}
+
+.timezone-note {
+  margin-top: 15px !important;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+/* =========================
+   CALENDAR
+========================= */
+
+.trial-calendar {
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 25px;
+
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.calendar-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.calendar-arrow {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 1.7rem;
+  cursor: pointer;
+
+  background: rgba(128, 128, 128, 0.12);
+  color: inherit;
+
+  transition: transform 0.2s ease,
+              background 0.2s ease;
+}
+
+.calendar-arrow:hover {
+  transform: scale(1.08);
+  background: rgba(128, 128, 128, 0.22);
+}
+
+
+/* WEEKDAY HEADINGS */
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  margin-bottom: 10px;
+}
+
+.calendar-weekdays span {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.55;
+}
+
+
+/* CALENDAR DAYS */
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 7px;
+}
+
+.calendar-day {
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 12px;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+
+  background: transparent;
+  color: inherit;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* DAYS WITH AVAILABLE TRIALS */
+
+.calendar-day.available {
+  background: rgba(124, 58, 237, 0.12);
+  font-weight: 600;
+}
+
+.calendar-day.available:hover {
+  background: rgba(124, 58, 237, 0.25);
+  transform: translateY(-2px);
+}
+
+
+/* SELECTED DATE */
+
+.calendar-day.selected {
+  background: #7c3aed;
+  color: white;
+}
+
+
+/* UNAVAILABLE DAYS */
+
+.calendar-day.unavailable {
+  opacity: 0.25;
+  cursor: default;
+}
+
+
+/* DAYS OUTSIDE CURRENT MONTH */
+
+.calendar-day.empty {
+  visibility: hidden;
+}
+
+
+/* =========================
+   TIME SLOTS
+========================= */
+
+.trial-times-section {
+  max-width: 650px;
+  margin: 30px auto 0;
+}
+
+.trial-times-section h3 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.selected-date-label {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.trial-time-slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.trial-time-slot {
+  padding: 13px 10px;
+
+  border: 1px solid rgba(124, 58, 237, 0.35);
+  border-radius: 12px;
+
+  background: transparent;
+  color: inherit;
+
+  font-family: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.trial-time-slot:hover {
+  background: rgba(124, 58, 237, 0.12);
+  transform: translateY(-2px);
+}
+
+.trial-time-slot.selected {
+  background: #7c3aed;
+  color: white;
+  border-color: #7c3aed;
+}
+
+
+/* =========================
+   SELECTED TRIAL
+========================= */
+
+.trial-selection {
+  max-width: 650px;
+
+  margin: 25px auto 10px;
+  padding: 16px 20px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  background: rgba(124, 58, 237, 0.08);
+}
+
+.trial-selection strong {
+  margin-left: 5px;
+}
+
+
+/* =========================
+   MOBILE BOOKING
+========================= */
+
+@media (max-width: 768px) {
+
+  .trial-booking {
+    margin-top: 35px;
+  }
+
+  .trial-calendar {
+    padding: 18px 12px;
+  }
+
+  .calendar-days {
+    gap: 4px;
+  }
+
+  .calendar-day {
+    border-radius: 9px;
+    font-size: 0.85rem;
+  }
+
+  .calendar-weekdays span {
+    font-size: 0.7rem;
+  }
+
+  .trial-time-slots {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trial-booking-header h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
 }
