@@ -2579,3 +2579,91 @@ body.dark-mode .review-field textarea {
     transform: translateY(0);
   }
 }
+
+/* =========================
+   OPTIONAL FREE TRIAL
+========================= */
+
+.trial-choice {
+  max-width: 760px;
+  margin: 35px auto 25px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.trial-choice-question {
+  margin: 0 0 18px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.trial-choice-options {
+  display: flex;
+  gap: 14px;
+}
+
+.trial-choice-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 17px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.trial-choice-option:hover {
+  border-color: #0f766e;
+  background: rgba(15, 118, 110, 0.04);
+}
+
+.trial-choice-option input {
+  accent-color: #0f766e;
+}
+
+/* Locked scheduler */
+
+.trial-booking {
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.trial-booking-locked {
+  filter: blur(3px);
+  opacity: 0.45;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Dark mode */
+
+body.dark-mode .trial-choice {
+  background: #1f2937;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .trial-choice-option {
+  border-color: #374151;
+}
+
+body.dark-mode .trial-choice-option:hover {
+  border-color: #0f766e;
+  background: rgba(15, 118, 110, 0.08);
+}
+
+@media (max-width: 768px) {
+  .trial-choice {
+    padding: 22px 18px;
+  }
+
+  .trial-choice-options {
+    flex-direction: column;
+  }
+}

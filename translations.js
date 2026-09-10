@@ -128,6 +128,10 @@ completeBeginner: "Complete Beginner",
 learningGoal: "What do you want to achieve?",
 learningGoalPlaceholder: "For example: I want to improve my Business English for international job interviews.",
 
+trialChoiceLabel: "Would you like a free 30-minute trial lesson?",
+trialChoiceYes: "Yes, I'd like a free trial",
+trialChoiceNo: "No, I'm ready to get started",
+
 submitApplication: "Submit Application",
 
 applicationReceived: "Application Received!",
@@ -403,6 +407,10 @@ completeBeginner: "Principiante absoluto",
 
 learningGoal: "¿Qué quieres conseguir?",
 learningGoalPlaceholder: "Por ejemplo: Quiero mejorar mi inglés empresarial para entrevistas de trabajo internacionales.",
+
+trialChoiceLabel: "¿Te gustaría tener una clase de prueba gratuita de 30 minutos?",
+trialChoiceYes: "Sí, me gustaría una clase de prueba gratuita",
+trialChoiceNo: "No, estoy listo/a para empezar",
 
 submitApplication: "Enviar solicitud",
 
@@ -682,6 +690,10 @@ completeBeginner: "Iniciante completo",
 learningGoal: "O que você quer alcançar?",
 learningGoalPlaceholder: "Por exemplo: Quero melhorar meu inglês para negócios para entrevistas de emprego internacionais.",
 
+trialChoiceLabel: "Você gostaria de uma aula experimental gratuita de 30 minutos?",
+trialChoiceYes: "Sim, gostaria de uma aula experimental gratuita",
+trialChoiceNo: "Não, estou pronto(a) para começar",
+
 submitApplication: "Enviar inscrição",
 
 applicationReceived: "Inscrição recebida!",
@@ -957,6 +969,11 @@ completeBeginner: "零基础",
 
 learningGoal: "您希望达到什么目标？",
 learningGoalPlaceholder: "例如：我想提高商务英语水平，以便参加国际公司的求职面试。",
+
+
+trialChoiceLabel: "你想参加一次免费的30分钟试听课吗？",
+trialChoiceYes: "是的，我想参加免费试听课",
+trialChoiceNo: "不用，我已经准备好直接开始学习",
 
 submitApplication: "提交申请",
 
@@ -1296,6 +1313,10 @@ reviewSuccessText: "Vos commentaires ont été reçus et seront examinés avant 
   learningGoalPlaceholder: "Par exemple : Je souhaite améliorer mon anglais professionnel pour des entretiens d’embauche internationaux.",
 
   submitApplication: "Envoyer la candidature",
+
+trialChoiceLabel: "Souhaitez-vous bénéficier d'un cours d'essai gratuit de 30 minutes ?",
+trialChoiceYes: "Oui, j'aimerais bénéficier d'un cours d'essai gratuit",
+trialChoiceNo: "Non, je suis prêt(e) à commencer",
 
   applicationReceived: "Candidature reçue !",
 

@@ -280,6 +280,7 @@
 </div>
 
 
+
         <!-- LEARNING GOAL -->
 
         <div class="form-group">
@@ -303,7 +304,45 @@
      FREE TRIAL BOOKING
 ========================= -->
 
-<div class="trial-booking">
+<div class="trial-choice">
+
+  <p class="trial-choice-question" data-i18n="trialChoiceLabel">
+    Would you like a free 30-minute trial lesson?
+  </p>
+
+  <div class="trial-choice-options">
+
+    <label class="trial-choice-option">
+      <input
+        type="radio"
+        name="freeTrial"
+        id="freeTrialYes"
+        value="Yes"
+        required
+      >
+      <span data-i18n="trialChoiceYes">
+        Yes, I'd like a free trial
+      </span>
+    </label>
+
+    <label class="trial-choice-option">
+      <input
+        type="radio"
+        name="freeTrial"
+        id="freeTrialNo"
+        value="No"
+        required
+      >
+      <span data-i18n="trialChoiceNo">
+        No, I'm ready to get started
+      </span>
+    </label>
+
+  </div>
+
+</div>
+
+<div class="trial-booking trial-booking-locked" id="trialBooking">
 
   <div class="trial-booking-header">
 

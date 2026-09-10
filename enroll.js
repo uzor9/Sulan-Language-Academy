@@ -1047,29 +1047,42 @@ let selectedTrialDate = null;
 let selectedTrialTime = null;
 
 
-// --------------------------------------------------
-// TEMPORARY TEST AVAILABILITY
-//
-// This is ONLY for building/testing the interface.
-// We'll replace this with real availability later.
-// --------------------------------------------------
-
 function getTemporaryAvailability(date) {
 
   const day = date.getDay();
+  const slots = [];
 
   // Sunday = unavailable
   if (day === 0) {
     return [];
   }
 
-  // Example test slots
+  // Saturday = 12:00 PM to midnight
+  // Last 30-minute trial begins at 11:30 PM
   if (day === 6) {
-    return ["10:00", "12:00", "15:00"];
+
+    for (let hour = 12; hour < 24; hour++) {
+      slots.push(
+        `${String(hour).padStart(2, "0")}:00`,
+        `${String(hour).padStart(2, "0")}:30`
+      );
+    }
+
+    return slots;
   }
 
-  return ["10:00", "13:00", "16:00", "18:00"];
+  // Monday-Friday = 5:00 AM to 5:00 PM
+  // Last 30-minute trial begins at 4:30 PM
+  for (let hour = 5; hour < 17; hour++) {
+    slots.push(
+      `${String(hour).padStart(2, "0")}:00`,
+      `${String(hour).padStart(2, "0")}:30`
+    );
+  }
+
+  return slots;
 }
+
 
 
 // --------------------------------------------------
@@ -1509,3 +1522,53 @@ if (nextMonthBtn) {
 // --------------------------------------------------
 
 renderTrialCalendar();
+
+// =========================
+// OPTIONAL FREE TRIAL
+// =========================
+
+function unlockTrialBooking() {
+  if (!trialBooking) return;
+
+  trialBooking.classList.remove("trial-booking-locked");
+}
+
+function lockTrialBooking() {
+  if (!trialBooking) return;
+
+  trialBooking.classList.add("trial-booking-locked");
+
+  // Clear any previously selected booking
+  if (trialDateInput) trialDateInput.value = "";
+  if (trialTimeInput) trialTimeInput.value = "";
+  if (trialTimezoneInput) trialTimezoneInput.value = "";
+
+  // Clear selected time-slot styling
+  document.querySelectorAll(".trial-time-slot").forEach((slot) => {
+    slot.classList.remove("selected");
+  });
+
+  // Reset selected booking text
+  const trialSelectionText =
+    document.getElementById("trialSelectionText");
+
+  if (trialSelectionText) {
+    trialSelectionText.textContent = "No time selected";
+  }
+}
+
+if (freeTrialYes && freeTrialNo && trialBooking) {
+
+  freeTrialYes.addEventListener("change", function () {
+    if (this.checked) {
+      unlockTrialBooking();
+    }
+  });
+
+  freeTrialNo.addEventListener("change", function () {
+    if (this.checked) {
+      lockTrialBooking();
+    }
+  });
+
+}
