@@ -23,9 +23,14 @@ const translations = {
     exploreCourses: "Explore Courses",
     trialNote: "Free 30-minute trial lesson available for all new students.",
 
-    studentStat: "Students",
-    languageStat: "Languages",
-    successStat: "Success Rate",
+   speakDayOne: "Speak From Day One",
+speakDayOneDescription: "Active speaking from your very first lesson.",
+
+builtAroundGoals: "Built Around Your Goals",
+builtAroundGoalsDescription: "Lessons shaped around what you want to achieve.",
+
+oneOnOneCoaching: "One-on-One Coaching",
+oneOnOneCoachingDescription: "Your full lesson time is focused on you.",
 
     testimonialsTitle: "What Our Students Say",
 
@@ -56,19 +61,19 @@ const translations = {
     bookTrial: "Book My Free Lesson",
 
     // Trust section
-    trustedStudents: "Trusted by Students Worldwide",
+    realLifeTitle: "Language Coaching Built for Real Life",
 
-    china: "China",
-    chinaDescription: "Business English and interview preparation",
+conversationTitle: "Conversation",
+conversationDescription: "Build confidence speaking naturally in everyday situations.",
 
-    nigeria: "Nigeria",
-    nigeriaDescription: "Spanish, French, and Portuguese coaching",
+workBusinessTitle: "Work & Business",
+workBusinessDescription: "Practice communication for meetings, interviews, clients, and professional settings.",
 
-    brazil: "Brazil",
-    brazilDescription: "English fluency and pronunciation training",
+travelRelocationTitle: "Travel & Relocation",
+travelRelocationDescription: "Prepare for real conversations when travelling or living abroad.",
 
-    portugal: "Portugal",
-    portugalDescription: "Advanced conversation and professional communication",
+personalGoalsTitle: "Personal Goals",
+personalGoalsDescription: "Lessons adapted to your level, interests, and specific reasons for learning.",
   
     // About page
 aboutHeroTitle: "Meet Your Language Coach",
@@ -297,24 +302,30 @@ joinFrenchWaitingList: "Join the Waiting List",
     navContact: "Contacto",
 
     // Homepage
-    heroTitle: "ACADEMIA DE IDIOMAS SULAN",
-    heroSubtitle: "Coaching profesional de idiomas en línea para estudiantes, profesionales y estudiantes internacionales.",
-    signup: "Empieza a Aprender Hoy",
+    heroTitle: "Aprende un idioma que realmente puedas usar.",
+heroSubtitle: "Coaching personalizado en línea centrado en conversaciones reales, confianza y comunicación práctica.",
+signup: "Reserva una clase de prueba gratuita",
     exploreCourses: "Explorar Cursos",
     trialNote: "Clase de prueba gratuita de 30 minutos disponible para todos los nuevos estudiantes.",
 
-    studentStat: "Estudiantes",
-    languageStat: "Idiomas",
-    successStat: "Tasa de Éxito",
+    speakDayOne: "Habla desde el primer día",
+speakDayOneDescription: "Practica la expresión oral desde tu primera clase.",
+
+builtAroundGoals: "Diseñado en torno a tus objetivos",
+builtAroundGoalsDescription: "Clases adaptadas a lo que quieres conseguir.",
+
+oneOnOneCoaching: "Coaching individual",
+oneOnOneCoachingDescription: "Todo el tiempo de la clase está dedicado a ti.",
 
     testimonialsTitle: "Lo Que Dicen Nuestros Estudiantes",
 
     // Courses page
     coursesTitle: "Encuentra el Curso Adecuado para Ti",
-    coursesSubtitle: "Explora nuestros cursos de idiomas y elige el que mejor se adapte a tus objetivos, intereses y trayectoria.",
+    coursesSubtitle: "Elige tu idioma y empieza a desarrollar las habilidades de expresión oral que necesitas para conversaciones reales.",
+
 
     englishTitle: "Inglés",
-    englishDescription: "Mejora tu expresión oral, escritura, comunicación empresarial y habilidades para entrevistas mediante clases estructuradas.",
+    englishDescription: "Gana confianza en el inglés cotidiano y profesional mediante práctica oral, coaching personalizado y comunicación del mundo real.",
 
     spanishTitle: "Español",
     spanishDescription: "Domina la conversación, el español para viajes y la comunicación profesional para el trabajo y las oportunidades internacionales.",
@@ -337,19 +348,19 @@ joinFrenchWaitingList: "Join the Waiting List",
     bookTrial: "Reservar Mi Clase Gratuita",
 
     // Trust section
-    trustedStudents: "La Confianza de Estudiantes de Todo el Mundo",
+    realLifeTitle: "Coaching de idiomas para la vida real",
 
-    china: "China",
-    chinaDescription: "Inglés empresarial y preparación para entrevistas",
+conversationTitle: "Conversación",
+conversationDescription: "Gana confianza para hablar con naturalidad en situaciones cotidianas.",
 
-    nigeria: "Nigeria",
-    nigeriaDescription: "Coaching de español, francés y portugués",
+workBusinessTitle: "Trabajo y negocios",
+workBusinessDescription: "Practica la comunicación para reuniones, entrevistas, clientes y entornos profesionales.",
 
-    brazil: "Brasil",
-    brazilDescription: "Fluidez en inglés y entrenamiento de pronunciación",
+travelRelocationTitle: "Viajes y mudanzas",
+travelRelocationDescription: "Prepárate para conversaciones reales al viajar o vivir en el extranjero.",
 
-    portugal: "Portugal",
-    portugalDescription: "Conversación avanzada y comunicación profesional",
+personalGoalsTitle: "Objetivos personales",
+personalGoalsDescription: "Clases adaptadas a tu nivel, tus intereses y tus motivos específicos para aprender.",
  // About page
 aboutHeroTitle: "Conoce a Tu Coach de Idiomas",
 aboutHeroSubtitle: "Ayudo a los estudiantes a alcanzar fluidez, confianza y conexiones globales mediante clases prácticas de idiomas.",
@@ -578,24 +589,29 @@ joinFrenchWaitingList: "Unirme a la lista de espera",
     navContact: "Contato",
 
     // Homepage
-    heroTitle: "ACADEMIA DE IDIOMAS SULAN",
-    heroSubtitle: "Coaching profissional de idiomas online para estudantes, profissionais e alunos internacionais.",
-    signup: "Comece a Aprender Hoje",
+    heroTitle: "Aprenda um idioma que você realmente possa usar.",
+heroSubtitle: "Coaching online personalizado focado em conversas reais, confiança e comunicação prática.",
+signup: "Agende uma aula experimental gratuita",
     exploreCourses: "Explorar Cursos",
     trialNote: "Aula experimental gratuita de 30 minutos disponível para todos os novos alunos.",
 
-    studentStat: "Alunos",
-    languageStat: "Idiomas",
-    successStat: "Taxa de Sucesso",
+    speakDayOne: "Fale desde o primeiro dia",
+speakDayOneDescription: "Pratique a conversação desde a sua primeira aula.",
+
+builtAroundGoals: "Feito para os seus objetivos",
+builtAroundGoalsDescription: "Aulas adaptadas ao que você deseja alcançar.",
+
+oneOnOneCoaching: "Coaching individual",
+oneOnOneCoachingDescription: "Todo o tempo da aula é dedicado a você.",
 
     testimonialsTitle: "O Que Nossos Alunos Dizem",
 
     // Courses page
     coursesTitle: "Encontre o Curso Ideal para Você",
-    coursesSubtitle: "Explore nossos cursos de idiomas e escolha aquele que melhor se adapta aos seus objetivos, interesses e trajetória.",
+    coursesSubtitle: "Escolha seu idioma e comece a desenvolver as habilidades de conversação necessárias para situações reais.",
 
     englishTitle: "Inglês",
-    englishDescription: "Melhore sua fala, escrita, comunicação empresarial e habilidades para entrevistas com aulas estruturadas.",
+    englishDescription: "Ganhe confiança no inglês do dia a dia e profissional por meio de prática de conversação, coaching personalizado e comunicação em situações reais.",
 
     spanishTitle: "Espanhol",
     spanishDescription: "Domine a conversação, o espanhol para viagens e a comunicação profissional para o trabalho e oportunidades internacionais.",
@@ -618,19 +634,19 @@ joinFrenchWaitingList: "Unirme a la lista de espera",
     bookTrial: "Agendar Minha Aula Gratuita",
 
     // Trust section
-    trustedStudents: "A Confiança de Alunos do Mundo Todo",
+   realLifeTitle: "Coaching de idiomas para a vida real",
 
-    china: "China",
-    chinaDescription: "Inglês para negócios e preparação para entrevistas",
+conversationTitle: "Conversação",
+conversationDescription: "Ganhe confiança para falar naturalmente em situações do dia a dia.",
 
-    nigeria: "Nigéria",
-    nigeriaDescription: "Coaching de espanhol, francês e português",
+workBusinessTitle: "Trabalho e negócios",
+workBusinessDescription: "Pratique a comunicação para reuniões, entrevistas, clientes e ambientes profissionais.",
 
-    brazil: "Brasil",
-    brazilDescription: "Fluência em inglês e treinamento de pronúncia",
+travelRelocationTitle: "Viagens e mudança para o exterior",
+travelRelocationDescription: "Prepare-se para conversas reais ao viajar ou morar no exterior.",
 
-    portugal: "Portugal",
-    portugalDescription: "Conversação avançada e comunicação profissional",
+personalGoalsTitle: "Objetivos pessoais",
+personalGoalsDescription: "Aulas adaptadas ao seu nível, interesses e motivos específicos para aprender.",
   
     // About page
 aboutHeroTitle: "Conheça Seu Professor de Idiomas",
@@ -858,24 +874,29 @@ joinFrenchWaitingList: "Entrar na lista de espera",
     navContact: "联系我们",
 
     // Homepage
-    heroTitle: "SULAN语言学院",
-    heroSubtitle: "为学生、专业人士和国际学习者提供专业的在线语言培训。",
-    signup: "立即开始学习",
+   heroTitle: "学习一门真正能用的语言。",
+heroSubtitle: "个性化在线语言辅导，专注于真实对话、自信表达和实用沟通。",
+signup: "预约免费试听课",
     exploreCourses: "探索课程",
     trialNote: "所有新学生均可享受30分钟免费试听课。",
 
-    studentStat: "学生",
-    languageStat: "语言",
-    successStat: "成功率",
+    speakDayOne: "从第一天开始说",
+speakDayOneDescription: "从第一节课开始进行实际口语练习。",
+
+builtAroundGoals: "围绕你的目标量身定制",
+builtAroundGoalsDescription: "课程根据你想要实现的目标进行设计。",
+
+oneOnOneCoaching: "一对一辅导",
+oneOnOneCoachingDescription: "整节课的时间都专注于你的学习。",
 
     testimonialsTitle: "我们的学生怎么说",
 
     // Courses page
     coursesTitle: "找到适合你的课程",
-    coursesSubtitle: "浏览我们的语言课程，选择最符合你的目标、兴趣和学习计划的课程。",
+    coursesSubtitle: "选择您想学习的语言，开始培养真实对话所需的口语能力。",
 
     englishTitle: "英语",
-    englishDescription: "通过系统化的指导提升口语、写作、商务沟通和面试能力。",
+    englishDescription: "通过实用口语练习、个性化辅导和真实场景交流，增强日常及职场英语的自信。",
 
     spanishTitle: "西班牙语",
     spanishDescription: "掌握日常会话、旅行西班牙语以及适用于工作和国际机会的专业沟通能力。",
@@ -898,19 +919,19 @@ joinFrenchWaitingList: "Entrar na lista de espera",
     bookTrial: "预约我的免费试听课",
 
     // Trust section
-    trustedStudents: "受到全球学生的信赖",
+   realLifeTitle: "为真实生活打造的语言辅导",
 
-    china: "中国",
-    chinaDescription: "商务英语和面试准备",
+conversationTitle: "日常对话",
+conversationDescription: "增强自信，在日常生活中自然地进行交流。",
 
-    nigeria: "尼日利亚",
-    nigeriaDescription: "西班牙语、法语和葡萄牙语培训",
+workBusinessTitle: "工作与商务",
+workBusinessDescription: "练习会议、面试、客户沟通和职场环境中的实用表达。",
 
-    brazil: "巴西",
-    brazilDescription: "英语流利度和发音训练",
+travelRelocationTitle: "旅行与海外生活",
+travelRelocationDescription: "为旅行或在国外生活时的真实对话做好准备。",
 
-    portugal: "葡萄牙",
-    portugalDescription: "高级会话和专业沟通",
+personalGoalsTitle: "个人目标",
+personalGoalsDescription: "根据你的水平、兴趣和具体学习目标定制课程。",
   
     // About page
 aboutHeroTitle: "认识您的语言教练",
@@ -1139,24 +1160,29 @@ fr: {
   navContact: "Contact",
 
   // Homepage
-  heroTitle: "SULAN LANGUAGE ACADEMY",
-  heroSubtitle: "Coaching linguistique professionnel en ligne pour les étudiants, les professionnels et les apprenants internationaux.",
-  signup: "Commencez à apprendre aujourd’hui",
+  heroTitle: "Apprenez une langue que vous pouvez vraiment utiliser.",
+heroSubtitle: "Un coaching personnalisé en ligne axé sur de vraies conversations, la confiance et la communication pratique.",
+signup: "Réservez un cours d’essai gratuit",
   exploreCourses: "Découvrir les cours",
   trialNote: "Une séance d’essai gratuite de 30 minutes est disponible pour tous les nouveaux étudiants.",
 
-  studentStat: "Étudiants",
-  languageStat: "Langues",
-  successStat: "Taux de réussite",
+  speakDayOne: "Parlez dès le premier jour",
+speakDayOneDescription: "Pratiquez l’expression orale dès votre premier cours.",
+
+builtAroundGoals: "Conçu autour de vos objectifs",
+builtAroundGoalsDescription: "Des cours adaptés à ce que vous souhaitez accomplir.",
+
+oneOnOneCoaching: "Coaching individuel",
+oneOnOneCoachingDescription: "Toute la durée du cours est consacrée à vous.",
 
   testimonialsTitle: "Ce que disent nos étudiants",
 
   // Courses
   coursesTitle: "Trouvez le cours qui vous convient",
-  coursesSubtitle: "Découvrez nos cours de langues et choisissez celui qui correspond le mieux à vos objectifs, à vos intérêts et à votre parcours.",
+  coursesSubtitle: "Explorez nos cours de langues et choisissez celui qui correspond le mieux à vos objectifs, vos intérêts et votre parcours.",
 
   englishTitle: "Anglais",
-  englishDescription: "Améliorez votre expression orale, votre écriture, votre communication professionnelle et vos compétences en entretien grâce à un accompagnement structuré.",
+  englishDescription:  "Gagnez en confiance en anglais au quotidien et dans un contexte professionnel grâce à une pratique orale concrète, un coaching personnalisé et une communication en situation réelle.",
 
   spanishTitle: "Espagnol",
   spanishDescription: "Maîtrisez la conversation, l’espagnol pour voyager et la communication professionnelle pour le travail et les opportunités internationales.",
@@ -1179,19 +1205,19 @@ fr: {
   bookTrial: "Réserver ma séance gratuite",
 
   // Trust
-  trustedStudents: "La confiance d’étudiants du monde entier",
+  realLifeTitle: "Un coaching linguistique conçu pour la vie réelle",
 
-  china: "Chine",
-  chinaDescription: "Anglais professionnel et préparation aux entretiens",
+conversationTitle: "Conversation",
+conversationDescription: "Gagnez en confiance pour parler naturellement dans les situations du quotidien.",
 
-  nigeria: "Nigeria",
-  nigeriaDescription: "Coaching en espagnol, français et portugais",
+workBusinessTitle: "Travail et affaires",
+workBusinessDescription: "Pratiquez la communication pour les réunions, les entretiens, les clients et les situations professionnelles.",
 
-  brazil: "Brésil",
-  brazilDescription: "Maîtrise de l’anglais et travail de la prononciation",
+travelRelocationTitle: "Voyages et expatriation",
+travelRelocationDescription: "Préparez-vous à de vraies conversations lorsque vous voyagez ou vivez à l’étranger.",
 
-  portugal: "Portugal",
-  portugalDescription: "Conversation avancée et communication professionnelle",
+personalGoalsTitle: "Objectifs personnels",
+personalGoalsDescription: "Des cours adaptés à votre niveau, à vos centres d’intérêt et à vos objectifs d’apprentissage.",
 
   // About
   aboutHeroTitle: "Rencontrez votre coach linguistique",

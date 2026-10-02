@@ -38,51 +38,45 @@
 
   <!-- NAVIGATION -->
 
-  <nav>
+   <nav>
+  <a href="index.html" class="logo">SULAN LANGUAGE ACADEMY</a>
 
-    <a href="index.html" class="logo">
-      SULAN LANGUAGE ACADEMY
-    </a>
+  <button id="menuBtn" class="menu-button">☰</button>
 
-    <button id="menuBtn" class="menu-button">
-      ☰
-    </button>
+  <ul id="navLinks">
+    <li><a id="navHome" href="index.html">Home</a></li>
+    <li><a id="navCourses" href="courses.html">Courses</a></li>
+    <li><a id="navAbout" href="about.html">About</a></li>
+    <li><a id="navContact" href="contact.html">Contact</a></li>
+  </ul> 
 
-    <ul id="navLinks">
+ <div class="language-menu">
+  <button
+    id="languageBtn"
+    class="language-button"
+    type="button"
+    aria-label="Choose language"
+    aria-expanded="false"
+  >
+    🌐
+  </button>
 
-      <li>
-        <a href="index.html" data-i18n="navHome">
-          Home
-        </a>
-      </li>
+  <div id="languageDropdown" class="language-dropdown">
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="es">Español</button>
+    <button type="button" data-lang="pt">Português</button>
+    <button type="button" data-lang="fr">Français</button>
+    <button type="button" data-lang="zh">中文</button>
+  </div>
+</div>
 
-      <li>
-        <a href="courses.html" data-i18n="navCourses">
-          Courses
-        </a>
-      </li>
-
-      <li>
-        <a href="about.html" data-i18n="navAbout">
-          About
-        </a>
-      </li>
-
-      <li>
-        <a href="contact.html" data-i18n="navContact">
-          Contact
-        </a>
-      </li>
-
-    </ul>
-
-    <select id="languageSwitcher">
-      <option value="en">English</option>
-      <option value="es">Español</option>
-      <option value="pt">Português</option>
-      <option value="fr">Français</option>
-      <option value="zh">中文</option>
-    </select>
+<select id="languageSwitcher" hidden>
+  <option value="en">English</option>
+  <option value="es">Español</option>
+  <option value="pt">Português</option>
+  <option value="fr">Français</option>
+  <option value="zh">中文</option>
+</select>
 
     <button id="darkModeBtn" class="dark-mode-button">
       🌙

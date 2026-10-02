@@ -1,237 +1,271 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 
-<html lang="en">
-<head>
+  <html lang="en">
+  <head>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S7WPRJ6NQL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7WPRJ6NQL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-S7WPRJ6NQL');
-</script>
+    gtag('config', 'G-S7WPRJ6NQL');
+  </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses - Sulan Language Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Sulan Language Academy</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="courses-page">
- <nav>
-  <a href="index.html" class="logo">SULAN LANGUAGE ACADEMY</a>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="courses-page">
+    <nav>
+    <a href="index.html" class="logo">SULAN LANGUAGE ACADEMY</a>
 
-  <button id="menuBtn" class="menu-button">☰</button>
+    <button id="menuBtn" class="menu-button">☰</button>
 
-  <ul id="navLinks">
-    <a href="index.html" data-i18n="navHome">Home</a>
-<a href="courses.html" data-i18n="navCourses">Courses</a>
-<a href="about.html" data-i18n="navAbout">About</a>
-<a href="contact.html" data-i18n="navContact">Contact</a>
-  </ul>
+    <ul id="navLinks">
+      <li><a id="navHome" href="index.html">Home</a></li>
+      <li><a id="navCourses" href="courses.html">Courses</a></li>
+      <li><a id="navAbout" href="about.html">About</a></li>
+      <li><a id="navContact" href="contact.html">Contact</a></li>
+    </ul> 
 
-  <select id="languageSwitcher">
-  <option value="en">English</option>
-  <option value="es">Español</option>
-  <option value="pt">Português</option>
-  <option value="fr">Français</option>
-  <option value="zh">中文</option>
-</select>
-  <button id="darkModeBtn" class="dark-mode-button">🌙</button>
-</nav>
+  <div class="language-menu">
+    <button
+      id="languageBtn"
+      class="language-button"
+      type="button"
+      aria-label="Choose language"
+      aria-expanded="false"
+    >
+      🌐
+    </button>
 
-  <section class="courses-hero">
- <h1 data-i18n="coursesTitle">Find the Right Course for You</h1>
-
-<p data-i18n="coursesSubtitle">
- Choose your language and start building the speaking skills you need for real conversations.
-</p>
-</section>
-
-<section class="courses-grid">
-
-  <div class="course-card">
-    <div class="course-icon">
-      <i class="fa-solid fa-language"></i>
+    <div id="languageDropdown" class="language-dropdown">
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="es">Español</button>
+      <button type="button" data-lang="pt">Português</button>
+      <button type="button" data-lang="fr">Français</button>
+      <button type="button" data-lang="zh">中文</button>
     </div>
-    <h3 data-i18n="englishTitle">English</h3>
-
-<p data-i18n="englishDescription">
-  Build confidence in everyday and professional English through practical speaking, personalized coaching, and real-world communication.
-</p>
-
-<a href="english.html" class="signup-button" data-i18n="viewCourse">
-  View Course
-</a>
   </div>
 
-  <div class="course-card">
-    <div class="course-icon">
-      <i class="fa-solid fa-earth-americas"></i>
+  <select id="languageSwitcher" hidden>
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="pt">Português</option>
+    <option value="fr">Français</option>
+    <option value="zh">中文</option>
+  </select>
+    <button id="darkModeBtn" class="dark-mode-button">🌙</button>
+  </nav>
+
+    <section class="courses-hero">
+  <h1 data-i18n="coursesTitle">Find the Right Course for You</h1>
+
+  <p data-i18n="coursesSubtitle">
+  Choose your language and start building the speaking skills you need for real conversations.
+  </p>
+  </section>
+
+  <section class="courses-grid">
+
+    <div class="course-card">
+      <div class="course-icon">
+        <i class="fa-solid fa-language"></i>
+      </div>
+      <h3 data-i18n="englishTitle">English</h3>
+
+  <p data-i18n="englishDescription">
+    Build confidence in everyday and professional English through practical speaking, personalized coaching, and real-world communication.
+  </p>
+
+  <a href="english.html" class="signup-button" data-i18n="viewCourse">
+    View Course
+  </a>
     </div>
-   <h3 data-i18n="spanishTitle">Spanish</h3>
 
-<p data-i18n="spanishDescription">
-  Master conversation, travel Spanish, and professional communication for work and international opportunities.
-</p>
+    <div class="course-card">
+      <div class="course-icon">
+        <i class="fa-solid fa-earth-americas"></i>
+      </div>
+    <h3 data-i18n="spanishTitle">Spanish</h3>
 
-<a href="spanish.html" class="signup-button" data-i18n="viewCourse">
-  View Course
-</a>
-  </div>
+  <p data-i18n="spanishDescription">
+    Master conversation, travel Spanish, and professional communication for work and international opportunities.
+  </p>
 
-  <div class="course-card">
-    <div class="course-icon">
-      <i class="fa-solid fa-comments"></i>
+  <a href="spanish.html" class="signup-button" data-i18n="viewCourse">
+    View Course
+  </a>
     </div>
-    <h3 data-i18n="portugueseTitle">Portuguese</h3>
 
-<p data-i18n="portugueseDescription">
-  Learn Brazilian and European Portuguese with practical lessons focused on fluency and confidence.
-</p>
+    <div class="course-card">
+      <div class="course-icon">
+        <i class="fa-solid fa-comments"></i>
+      </div>
+      <h3 data-i18n="portugueseTitle">Portuguese</h3>
 
-<a href="portuguese.html" class="signup-button" data-i18n="viewCourse">
-  View Course
-</a>
-  </div>
+  <p data-i18n="portugueseDescription">
+    Learn Brazilian and European Portuguese with practical lessons focused on fluency and confidence.
+  </p>
 
-  <div class="course-card">
-  <div class="course-icon">
-    <i class="fa-solid fa-book-open"></i>
-  </div>
+  <a href="portuguese.html" class="signup-button" data-i18n="viewCourse">
+    View Course
+  </a>
+    </div>
 
-  <h3 data-i18n="frenchTitle">French</h3>
+    <div class="course-card">
+    <div class="course-icon">
+      <i class="fa-solid fa-book-open"></i>
+    </div>
 
-<p data-i18n="frenchDescription">
-  French coaching is currently in development. Join the waiting list to be notified when classes become available.
-</p>
+    <h3 data-i18n="frenchTitle">French</h3>
 
-<a href="french.html" class="signup-button" data-i18n="waitingList">
-  Join Waiting List
-</a>
+  <p data-i18n="frenchDescription">
+    French coaching is currently in development. Join the waiting list to be notified when classes become available.
+  </p>
 
-</section>
+  <a href="french.html" class="signup-button" data-i18n="waitingList">
+    Join Waiting List
+  </a>
 
-<section class="trial-section">
+    </div>
+
+  </section>
+
+  <section class="trial-section">
 
   <div class="trial-card">
+
     <div class="trial-text">
-      <h2 data-i18n="trialTitle">Book a Free 30-Minute Trial Lesson</h2>
+      <h2 data-i18n="trialTitle">
+        Book a Free 30-Minute Trial Lesson
+      </h2>
+
       <p data-i18n="trialDescription">
-  Experience a real lesson before committing to a course. We'll discuss your goals,
-  assess your current level, and create a personalized learning plan for you.
-</p>
+        Experience a real lesson before committing to a course. We'll discuss your goals,
+        assess your current level, and create a personalized learning plan for you.
+      </p>
+    </div>
+
+    <div class="trial-features">
+
+      <div class="trial-feature">
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="noPayment">No payment required</span>
       </div>
 
-  <div class="trial-features">
-    <div class="trial-feature">
-      <i class="fa-solid fa-check"></i>
-      <span data-i18n="noPayment">No payment required</span>
-    </div>
+      <div class="trial-feature">
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="assessment">Personalized language assessment</span>
+      </div>
 
-    <div class="trial-feature">
-      <i class="fa-solid fa-check"></i>
-      <span data-i18n="assessment">Personalized language assessment</span>
-    </div>
-
-    <div class="trial-feature">
-      <i class="fa-solid fa-check"></i>
-      <span data-i18n="availableLanguages">
-  Available for English, Spanish, Portuguese
-</span>
-    </div>
-  </div>
-
-  <a href="enroll.html" class="signup-button" data-i18n="bookTrial">
-  Book My Free Lesson
-</a>
+      <div class="trial-feature">
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="availableLanguages">
+          Available for English, Spanish, Portuguese
+        </span>
+      </div>
 
     </div>
-  </div>
-</div>
+
+    <a href="enroll.html"
+       class="signup-button"
+       data-i18n="bookTrial">
+      Book My Free Lesson
+    </a>
 
   </div>
 
 </section>
 
-<section class="trust-section">
+ <section class="trust-section">
 
-  <h2>Language Coaching Built for Real Life</h2>
+  <h2 data-i18n="realLifeTitle">
+    Language Coaching Built for Real Life
+  </h2>
 
-<div class="trust-grid">
+  <div class="trust-grid">
 
-  <div class="trust-card">
-    <h3>Conversation</h3>
-    <p>Build confidence speaking naturally in everyday situations.</p>
-  </div>
+    <div class="trust-card">
+      <h3 data-i18n="conversationTitle">Conversation</h3>
+      <p data-i18n="conversationDescription">
+        Build confidence speaking naturally in everyday situations.
+      </p>
+    </div>
 
-  <div class="trust-card">
-    <h3>Work & Business</h3>
-    <p>Practice communication for meetings, interviews, clients, and professional settings.</p>
-  </div>
+    <div class="trust-card">
+      <h3 data-i18n="workBusinessTitle">Work & Business</h3>
+      <p data-i18n="workBusinessDescription">
+        Practice communication for meetings, interviews, clients, and professional settings.
+      </p>
+    </div>
 
-  <div class="trust-card">
-    <h3>Travel & Relocation</h3>
-    <p>Prepare for real conversations when travelling or living abroad.</p>
-  </div>
+    <div class="trust-card">
+      <h3 data-i18n="travelRelocationTitle">Travel & Relocation</h3>
+      <p data-i18n="travelRelocationDescription">
+        Prepare for real conversations when travelling or living abroad.
+      </p>
+    </div>
 
-  <div class="trust-card">
-    <h3>Personal Goals</h3>
-    <p>Lessons adapted to your level, interests, and specific reasons for learning.</p>
-  </div>
-
-</div>
+    <div class="trust-card">
+      <h3 data-i18n="personalGoalsTitle">Personal Goals</h3>
+      <p data-i18n="personalGoalsDescription">
+        Lessons adapted to your level, interests, and specific reasons for learning.
+      </p>
+    </div>
 
   </div>
 
 </section>
 
-  <script src="translations.js"></script>
-<script src="script.js"></script>
-<script src="courses.js"></script>
+    <script src="translations.js"></script>
+  <script src="script.js"></script>
+  <script src="courses.js"></script>
 
-<footer class="site-footer">
-  <div class="footer-content">
+  <footer class="site-footer">
+    <div class="footer-content">
 
-    <div class="footer-brand">
-      <h3>SULAN LANGUAGE ACADEMY</h3>
-      <p>Helping students become fluent and confident in English, Spanish, Portuguese, and French.</p>
+      <div class="footer-brand">
+        <h3>SULAN LANGUAGE ACADEMY</h3>
+        <p>Helping students become fluent and confident in English, Spanish, Portuguese, and French.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <p><strong>Email:</strong> uzornndy@gmail.com</p>
+        <p><strong>WhatsApp:</strong> +234 813 991 4417</p>
+        <p><strong>WeChat:</strong> Available for Chinese students</p>
+      </div>
+
     </div>
 
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="courses.html">Courses</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <div class="footer-bottom">
+      <p>© 2026 Sulan Language Academy. All rights reserved.</p>
     </div>
+  </footer>
 
-    <div class="footer-contact">
-      <p><strong>Email:</strong> uzornndy@gmail.com</p>
-      <p><strong>WhatsApp:</strong> +234 813 991 4417</p>
-      <p><strong>WeChat:</strong> Available for Chinese students</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 Sulan Language Academy. All rights reserved.</p>
-  </div>
-</footer>
-
- <!-- Cloudflare Web Analytics -->
-    <script
-      type="module"
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "08d8ab61268f4fca959e44a25a475d05"}'>
-    </script>
-    <!-- End Cloudflare Web Analytics -->
-</body>
-</html>
+  <!-- Cloudflare Web Analytics -->
+      <script
+        type="module"
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "08d8ab61268f4fca959e44a25a475d05"}'>
+      </script>
+      <!-- End Cloudflare Web Analytics -->
+  </body>
+  </html>

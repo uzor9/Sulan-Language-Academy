@@ -156,6 +156,30 @@ if (languageSwitcher) {
 
 }
 
+const languageBtn = document.getElementById("languageBtn");
+const languageDropdown = document.getElementById("languageDropdown");
+
+if (languageBtn && languageDropdown) {
+  languageBtn.addEventListener("click", function () {
+    languageDropdown.classList.toggle("show");
+
+    const isOpen = languageDropdown.classList.contains("show");
+    languageBtn.setAttribute("aria-expanded", isOpen);
+  });
+
+  languageDropdown.querySelectorAll("[data-lang]").forEach((button) => {
+    button.addEventListener("click", function () {
+      const lang = this.dataset.lang;
+
+      languageSwitcher.value = lang;
+      changeLanguage(lang);
+
+      languageDropdown.classList.remove("show");
+      languageBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
 
 // =========================
 // LOAD SAVED LANGUAGE

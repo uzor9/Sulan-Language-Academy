@@ -28,6 +28,7 @@
 </head> 
 
 <body class="home-page">
+  
   <nav>
   <a href="index.html" class="logo">SULAN LANGUAGE ACADEMY</a>
 
@@ -40,12 +41,32 @@
     <li><a id="navContact" href="contact.html">Contact</a></li>
   </ul> 
 
-  <select id="languageSwitcher">
+ <div class="language-menu">
+  <button
+    id="languageBtn"
+    class="language-button"
+    type="button"
+    aria-label="Choose language"
+    aria-expanded="false"
+  >
+    🌐
+  </button>
+
+  <div id="languageDropdown" class="language-dropdown">
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="es">Español</button>
+    <button type="button" data-lang="pt">Português</button>
+    <button type="button" data-lang="fr">Français</button>
+    <button type="button" data-lang="zh">中文</button>
+  </div>
+</div>
+
+<select id="languageSwitcher" hidden>
   <option value="en">English</option>
-<option value="es">Español</option>
-<option value="pt">Português</option>
-<option value="fr">Français</option>
-<option value="zh">中文</option>
+  <option value="es">Español</option>
+  <option value="pt">Português</option>
+  <option value="fr">Français</option>
+  <option value="zh">中文</option>
 </select>
 
   <button id="darkModeBtn" class="dark-mode-button">🌙</button>
@@ -89,7 +110,7 @@
   <div class="hero-image">
 
     <img
-      src="images/her.jpg.jpeg"
+      src="images/globe.jpg.jpeg"
       alt="Illustrated globe representing language learning"
       class="hero-photo"
     >
@@ -101,23 +122,29 @@
 
 <section class="stats-section reveal">
 
- <div class="stat-box">
-  <i class="fa-solid fa-comments stat-icon"></i>
-  <h2>Speak From Day One</h2>
-  <p>Active speaking from your very first lesson.</p>
-</div>
+  <div class="stat-box">
+    <i class="fa-solid fa-comments stat-icon"></i>
+    <h2 data-i18n="speakDayOne">Speak From Day One</h2>
+    <p data-i18n="speakDayOneDescription">
+      Active speaking from your very first lesson.
+    </p>
+  </div>
 
   <div class="stat-box">
-  <i class="fa-solid fa-bullseye stat-icon"></i>
-  <h2>Built Around Your Goals</h2>
-  <p>Lessons shaped around what you want to achieve.</p>
-</div>
+    <i class="fa-solid fa-bullseye stat-icon"></i>
+    <h2 data-i18n="builtAroundGoals">Built Around Your Goals</h2>
+    <p data-i18n="builtAroundGoalsDescription">
+      Lessons shaped around what you want to achieve.
+    </p>
+  </div>
 
   <div class="stat-box">
-  <i class="fa-solid fa-user stat-icon"></i>
-  <h2>One-on-One Coaching</h2>
-  <p>Your full lesson time is focused on you.</p>
-</div>
+    <i class="fa-solid fa-user stat-icon"></i>
+    <h2 data-i18n="oneOnOneCoaching">One-on-One Coaching</h2>
+    <p data-i18n="oneOnOneCoachingDescription">
+      Your full lesson time is focused on you.
+    </p>
+  </div>
 
 </section>
 
