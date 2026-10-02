@@ -48,20 +48,8 @@ window.addEventListener("load", () => {
 // -------------------------
 const testimonials = [
   {
-    text: "I became fluent in Spanish in 6 months.",
-    name: "- Maria, Brazil"
-  },
-  {
-    text: "The English lessons helped me pass my interview with a multinational company.",
-    name: "- Li Wei, China"
-  },
-  {
-    text: "Portuguese became so much easier after learning with Sulan.",
-    name: "- Ana, Portugal"
-  },
-  {
-    text: "The personalized lessons made learning French enjoyable and practical.",
-    name: "- Chinedu, Nigeria"
+    text: "I loved being able to actually speak and practice, instead of just sitting through a regular class.",
+    name: "- Camille, Canada"
   }
 ];
 

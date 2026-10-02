@@ -17,9 +17,9 @@ const translations = {
     navContact: "Contact",
 
     // Homepage
-    heroTitle: "SULAN LANGUAGE ACADEMY",
-    heroSubtitle: "Professional online language coaching for students, professionals, and international learners.",
-    signup: "Start Learning Today",
+    heroTitle: "Learn a Language You Can Actually Use.",
+    heroSubtitle: "Personalized online coaching focused on real conversation, confidence, and practical communication.",
+    signup: "Book a Free Trial",
     exploreCourses: "Explore Courses",
     trialNote: "Free 30-minute trial lesson available for all new students.",
 
@@ -30,12 +30,11 @@ const translations = {
     testimonialsTitle: "What Our Students Say",
 
     // Courses page
-    coursesTitle: "Find the Right Course for You",
-    coursesSubtitle: "Browse our language courses and choose the one that fits your goals, interests, and journey.",
-
+    coursesTitle: "Find the Right Course for YOU",
+    coursesSubtitle: "Choose your language and start building the speaking skills you need for real conversations.",
     englishTitle: "English",
-    englishDescription: "Improve speaking, writing, business communication, and interview skills with structured coaching.",
-    
+    englishDescription: "Build confidence in everyday and professional English through practical speaking, personalized coaching, and real-world communication.",
+
     spanishTitle: "Spanish",
     spanishDescription: "Master conversation, travel Spanish, and professional communication for work and international opportunities.",
 
